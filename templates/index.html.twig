@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="container mt-4 p-4">
+
+
+        {% if oiseaux is defined %}
+            {#
+            COUNTS
+            #}
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="radius5white bottom10">
+                    <b>Actuellement disponible</b>
+                    <br>
+                    {{ oiseaux.countOrdres }} ordres,
+                    {{ oiseaux.countFamilles }} familles,
+                    {{ oiseaux.countOiseaux }} oiseaux
+                </div>
+                </div>
+            </div>
+            {#
+            DETAILS
+            #}
+        <div class="row">
+            <div class="col-xs-12">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr class="info">
+                    <th>Ordre</th>
+                    <th>Famille</th>
+                    <th>Nom commun</th>
+                    <th>Nom latin</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                {% for nomOrdre, ordre in oiseaux.listeOiseaux.ordre %}
+                    <tr class="warning">
+                        <td>{{ nomOrdre }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                {% endfor %}
+
+
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+
+
+
+
+
+            {{ oiseaux.countOrdres }} ordres
+            <br>
+            <ul>
+                {% for nomOrdre, ordre in oiseaux.listeOiseaux.ordre %}
+                    <li>{{ nomOrdre }}</li>
+                {% endfor %}
+            </ul>
+            {{ oiseaux.countFamilles }} familles
+            <br>
+            {{ oiseaux.countOiseaux }} oiseaux
+            <br>
+
+
+        {% endif %}
+        erter
+        <br>
+        <img id="img"
+             class="img-fluid"
+             alt="zer"
+             title="zer"
+             src="{{ '/img/zero.png' }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type='text/javascript' src="{{ asset('js/birds.js') }}"></script>
+{% endblock %}

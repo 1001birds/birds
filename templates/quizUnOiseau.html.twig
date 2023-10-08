@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div class="container mt-4 p-4 radius5white">
+
+
+    erter
+    <br>
+    <img id="img"
+         class="img-fluid"
+         alt="zer"
+         title="zer"
+         src="{{ '/img/one.jpeg' }}">
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ parent() }}
+        <script type='text/javascript' src="{{ asset('js/birds.js') }}"></script>
+    {% endblock %}
