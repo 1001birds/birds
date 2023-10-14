@@ -59,6 +59,7 @@ class OiseauxController extends AbstractController
         $infosOiseau = array();
         $images = array();
         $from = ['é', 'è', ' à ', 'à'];
+
         $to = ['e', 'e', ' A ', 'a'];
         $nomOriginal = ucwords($request->get('nom'));
         $string = str_replace($from, $to, $nomOriginal);
