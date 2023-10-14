@@ -4,30 +4,45 @@
     <div class="container-fluid mt-1 p-3">
 
         <h2 class="text-muted">Fiche Oiseau</h2>
-        <h4>{{ nomOriginal }}</h4>
-        <p class="radius5white">{{ commentaire | nl2br }}</p>
+        {#
+        SI ON A BIEN UN OISEAU
+        #}
+        {% if oiseau is not empty %}
+            <h4>{{ oiseau.nom }}</h4>
+            <p class="radius5white">{{ commentaireOiseau | nl2br }}</p>
 
-        <div class="row">
-            {% if images is not empty %}
-                {% for image in images %}
+            <div class="row">
+                {% if images is not empty %}
+                    {% for image in images %}
 
+                        <div class="col-xs-12 col-sm-6">
+                            <img id="img"
+                                 class="img-fluid responsive radius5white bottom10"
+                                 alt="zer"
+                                 title="zer"
+                                 src="{{ image }}">
+                        </div>
+                    {% endfor %}
+                {% else %}
                     <div class="col-xs-12 col-sm-6">
-                    <img id="img"
-                         class="img-fluid responsive radius5white bottom10"
-                         alt="zer"
-                         title="zer"
-                         src="{{ image }}">
+                        <div class="alert alert-warning">
+                            <b>Pas d'images pour cet oiseau</b>
+                            <br>
+                            <i>Mince alors !</i>
+                        </div>
                     </div>
-                {% endfor %}
-            {% else %}
-                <div class="col-xs-12 col-sm-6">
-                    <div class="alert alert-warning">
-                        <b>Pas d'images pour cet oiseau</b>
-                        <br>
-                        <i>Mince alors !</i>
-                    </div>
-                </div>
-            {% endif %}
+                {% endif %}
+            </div>
+
+        {% else %}
+            <div class="radius5white">
+                Il manque des infos pour le numéro <span class="text-danger">{{ string }}</span>
+            </div>
+        {% endif %}
+        <div class="row top10">
+            <div class="col-xs-12">
+                <i class="small">random :: </i><a href="{{ path('oiseau', {string:nextString}) }}">{{ nextNom }}</a>
+            </div>
         </div>
     </div>
 

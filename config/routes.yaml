@@ -6,12 +6,12 @@ apprendre:
     path: /apprendre
     defaults: { _controller: 'App\Controller\OiseauxController::apprendre' }
 
-montreUnOiseau:
+quizUnOiseau:
     path: /quizUnOiseau
     defaults: { _controller: 'App\Controller\OiseauxController::quizUnOiseau' }
-    methods: POST
-    options:
-        expose: true
+#    methods: POST
+#    options:
+#        expose: true
 
 oiseau:
     path: /oiseau

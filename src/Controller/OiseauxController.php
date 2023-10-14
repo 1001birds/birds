@@ -39,12 +39,12 @@ class OiseauxController extends AbstractController
     public function index(
         Request $request
     ) {
-        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
+        $listeOiseaux = $this->oiseauxManipulator->listeOrdreEtFamille();
         dump($listeOiseaux);
         dump('birds');
 //        die;
         return $this->render('index.html.twig', [
-            'oiseaux' => $this->oiseauxManipulator->listeOiseaux()
+            'oiseaux' => $this->oiseauxManipulator->listeOrdreEtFamille()
         ]);
     }
 
@@ -56,49 +56,11 @@ class OiseauxController extends AbstractController
     public function oiseau(
         Request $request
     ) {
-        $infosOiseau = array();
-        $images = array();
-        $from = ['é', 'è', ' à ', 'à'];
-
-        $to = ['e', 'e', ' A ', 'a'];
-        $nomOriginal = ucwords($request->get('nom'));
-        $string = str_replace($from, $to, $nomOriginal);
-        $string = explode(' ', $string);
-        $string = implode('', $string);
-        $string = strtolower($string[0]).substr($string, 1);
-
-
-        $oiseau = Oiseaux::$oiseaux;
-        /*
-         * SI YA BIEN DES INFOS SUR CET OISEAU
-         * */
-        if(isset($oiseau[$string])) {
-            $infosOiseau = $oiseau[$string];
-
-            foreach ($infosOiseau['images'] as $i => $infos) {
-                $images[$i] = '/img/'.$string.'_'.$i.'.png';
-
-            }
-        }
-
-        dump($images);
-
-//        die;
-
-
-
-
-        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
-        dump($listeOiseaux);
-//        die;
-        return $this->render('oiseau.html.twig', [
-            'nomOriginal' => $nomOriginal,
-            'images' => $images,
-            'commentaire' => isset($infosOiseau['commentaire']) ? $infosOiseau['commentaire'] : ''
-        ]);
-//        $cheminLocal = $this->params->get('kernel.project_dir').'/public/img';
-//        if(file_exists($cheminLocal) && is_dir($cheminLocal)) {
-//        }
+        return $this->render('oiseau.html.twig',
+            $this->oiseauxManipulator->oiseau(
+                $request->get('string')
+            )
+        );
     }
 
     /**
@@ -109,12 +71,16 @@ class OiseauxController extends AbstractController
     public function apprendre(
         Request $request
     ) {
-        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
-        dump($listeOiseaux);
+
+//        dump($this->oiseauxManipulator->apprendre());die;
+
+
+//        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
+//        dump($listeOiseaux);
 //        die;
-        return $this->render('apprendre.html.twig', [
-            'bird' => 1
-        ]);
+        return $this->render('apprendre.html.twig',
+            $this->oiseauxManipulator->apprendre()
+        );
     }
 
     /**
@@ -125,8 +91,8 @@ class OiseauxController extends AbstractController
     public function quizUnOiseau(
         Request $request
     ) {
-        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
-        dump($listeOiseaux);
+//        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
+//        dump($listeOiseaux);
 //        die;
         return $this->render('quizUnOiseau.html.twig', [
             'bird' => 1

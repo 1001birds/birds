@@ -1,14 +1,61 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <div class="container mt-4 p-4 radius5white">
+    <div class="container">
 
 
-        apprendre
+        <div class="row top10">
+            <div class="col-xs-12">
+                <h3>Apprendre</h3>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                {% if image is defined %}
+                    <img id="img"
+                         class="img-fluid responsive radius5white"
+                         alt="zer"
+                         title="zer"
+                         src="{{ '/img/'~image }}">
+                {% else %}
+                    Il y a un problème pour <span class="text-danger">{{ erreur }}</span>
+                {% endif %}
+            </div>
+            <div class="hidden-xs col-sm-6">
+            </div>
+            {#
+            BOUTONS
+            SI IMAGHE EXISTE
+            #}
+            <div class="col-xs-2 col-sm-1 top10">
+                {% if image is defined %}
+                    <button id="seeName"
+                            title="Voir le nom"
+                            class="btn btn-default">
+                        voir
+                        {#                    <span class="glyphicon glyphicons-eye-open"></span>#}
+                    </button>
+                {% endif %}
+            </div>
+            <div class="col-xs-8 col-sm-4 top10 text-center">
+                {% if image is defined %}
+                    <b id="name" class="d-none">{{ nom }}</b>
+                {% endif %}
+            </div>
+            {#
+            SUIVANT
+            #}
+            <div class="col-xs-2 col-sm-1 top10">
+
+                <button id="next"
+                        title="Suivant"
+                        class="btn btn-default pull-right">
+                    suivant
+                    {#                    <span class="glyphicon glyphicons-arrow-left"></span>#}
+                </button>
+            </div>
     </div>
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    <script type='text/javascript' src="{{ asset('js/birds.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('js/apprendre.js') }}"></script>
 {% endblock %}

@@ -37,46 +37,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 first">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('apprendre') }}">apprendre</a>
+                        <a class="nav-link" href="{{ path('apprendre') }}">Apprendre</a>
                     </li>
-
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdownMenuLink"
-                                   class="nav-link dropdown-toggle"
-                                   href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Nouveau
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item"
-                                           href="">aaa</a>
-                                </div>
-                            </li>
-
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdownMenuLink"
-                               class="nav-link dropdown-toggle"
-                               href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Data
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item btn"
-                                   href="{{ path('apprendre') }}">apprendre</a>
-                                <a class="dropdown-item btn"
-                                   href="{{ path('index') }}">r</a>
-                                <div class="dropdown-divider"></div>
-                            </div>
-                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ path('quizUnOiseau') }}">Quizz</a>
+                    </li>
                 </ul>
 
                 {#
                 RECHERCHE
                 #}
-                <form action="" class="form-inline mr-5" method="post">
-                    <input id="searchInput" name="string" class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
-                    <button id="searchButton" class="btn btn-info my-2 my-sm-0" type="submit">
-                        <span class="glyphicons glyphicons-search"></span>
-                    </button>
-                </form>
+{#                <form action="" class="form-inline mr-5" method="post">#}
+{#                    <input id="searchInput" name="string" class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">#}
+{#                    <button id="searchButton" class="btn btn-info my-2 my-sm-0" type="submit">#}
+{#                        <span class="glyphicons glyphicons-search"></span>#}
+{#                    </button>#}
+{#                </form>#}
 
 
             </div>
