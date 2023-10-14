@@ -4,6 +4,35 @@ namespace App\Mapping;
 
 class Oiseaux
 {
+    public static $oiseaux = [
+        'bernacheCravant' => [
+            'commentaire' => "sdfsdfsdfsdf\nzerzerzer\n\n
+                zerzerzer
+                sdfsdf",
+            'images' => [
+                0 => [
+                    'commentaire' => ''
+                ],
+                1 => [
+                    'commentaire' => ''
+                ]
+            ]
+
+        ],
+        'cailleDesBles' => [
+            'commentaire' => "sdfsdfsdfsdf\nzerzerzer\n\n
+                zerzerzer
+                sdfsdf",
+            'images' => [
+                0 => [
+                    'commentaire' => ''
+                ],
+                1 => [
+                    'commentaire' => ''
+                ]
+            ]
+        ]
+    ];
     public static $ordesEtFamilles = [
         'ansériformes' => [
             /*

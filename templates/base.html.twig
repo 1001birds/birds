@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/filter.css">
-    <link rel="stylesheet" href="glyph/css/glyphicons.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -88,6 +87,9 @@
 {% endblock %}
 
 {% block javascripts %}
+    <script type='text/javascript' src="{{ asset('js/birds.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('js/bootstrap-select.min.js') }}"></script>
 {% endblock %}
 
 </body>

@@ -3,7 +3,6 @@
 {% block content %}
     <div class="container mt-4 p-4">
 
-
         {% if oiseaux is defined %}
             {#
             COUNTS
@@ -22,61 +21,52 @@
             {#
             DETAILS
             #}
-        <div class="row">
-            <div class="col-xs-12">
-            <table class="table table-bordered table-striped">
-                <thead>
-                <tr class="info">
-                    <th>Ordre</th>
-                    <th>Famille</th>
-                    <th>Nom commun</th>
-                    <th>Nom latin</th>
-                </tr>
-                </thead>
-                <tbody>
-
-                {% for nomOrdre, ordre in oiseaux.listeOiseaux.ordre %}
-                    <tr class="warning">
-                        <td>{{ nomOrdre }}</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+            <div class="row">
+                <div class="col-xs-12">
+                <table id="" class="table table-bordered">
+                    <thead>
+                    <tr class="table-info">
+                        <th class="hidden-xs">Ordre</th>
+                        <th class="hidden-xs">Famille</th>
+                        <th>Nom commun</th>
+                        <th>Nom latin</th>
                     </tr>
-                {% endfor %}
+                    </thead>
+                    <tbody>
+                        {% set trNomOrdre = '' %}
+                        {% set trNomFamille = '' %}
+                        {% for nomOrdre, ordre in oiseaux.listeOiseaux.ordre %}
+                            {% for nomFamille, famille in ordre %}
+                                {% for oiseau in famille %}
+                                    <tr class="table-warning">
+                                        <td class="hidden-xs">
+                                            {{ trNomOrdre == nomOrdre ? ' ' : nomOrdre }}
+                                        </td>
+                                        <td class="hidden-xs">
+                                            {{ trNomFamille == nomFamille ? ' ' : nomFamille }}
+                                        </td>
+                                        <td>
+                                            {#
+                                            NOM
+                                            #}
+                                            <a href="{{ path('oiseau', {nom:oiseau.nom}) }}">{{ oiseau.nom }}</a>
 
-
-
-                </tbody>
-            </table>
+                                            <div class="visible-xs">
+                                                <span class="text-muted small">{{ nomOrdre }}</span>
+                                            </div>
+                                        </td>
+                                        <td>{{ oiseau.espece }}</td>
+                                    </tr>
+                                    {% set trNomFamille = nomFamille %}
+                                    {% set trNomOrdre = nomOrdre %}
+                                {% endfor %}
+                            {% endfor %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+                </div>
             </div>
-        </div>
-
-
-
-
-
-
-            {{ oiseaux.countOrdres }} ordres
-            <br>
-            <ul>
-                {% for nomOrdre, ordre in oiseaux.listeOiseaux.ordre %}
-                    <li>{{ nomOrdre }}</li>
-                {% endfor %}
-            </ul>
-            {{ oiseaux.countFamilles }} familles
-            <br>
-            {{ oiseaux.countOiseaux }} oiseaux
-            <br>
-
-
         {% endif %}
-        erter
-        <br>
-        <img id="img"
-             class="img-fluid"
-             alt="zer"
-             title="zer"
-             src="{{ '/img/zero.png' }}">
 {% endblock %}
 
 {% block javascripts %}

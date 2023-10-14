@@ -12,3 +12,7 @@ montreUnOiseau:
     methods: POST
     options:
         expose: true
+
+oiseau:
+    path: /oiseau
+    defaults: { _controller: 'App\Controller\OiseauxController::oiseau' }
