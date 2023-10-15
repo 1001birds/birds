@@ -1,13 +1,22 @@
-index:
-    path: /
-    defaults: { _controller: 'App\Controller\OiseauxController::index' }
+#index:
+#    path: /
+#    defaults: { _controller: 'App\Controller\OiseauxController::index' }
 
 apprendre:
     path: /apprendre
     defaults: { _controller: 'App\Controller\OiseauxController::apprendre' }
 
-quizUnOiseau:
-    path: /quizUnOiseau
+apprendreJS:
+    path: /apprendreJS
+    defaults: { _controller: 'App\Controller\OiseauxController::apprendreJS' }
+    methods: POST
+    options:
+        expose: true
+
+index:
+#quizUnOiseau:
+    path: /
+    #quizUnOiseau
     defaults: { _controller: 'App\Controller\OiseauxController::quizUnOiseau' }
 #    methods: POST
 #    options:
@@ -16,3 +25,6 @@ quizUnOiseau:
 oiseau:
     path: /oiseau
     defaults: { _controller: 'App\Controller\OiseauxController::oiseau' }
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing-sf4.xml"

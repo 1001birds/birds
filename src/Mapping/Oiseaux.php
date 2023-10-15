@@ -166,6 +166,86 @@ class Oiseaux
             'nom' => 'Aigrette garzette',
             'commentaire' => "",
             'images' => []
+        ],
+        'bihoreauGris' => [
+            'nom' => 'Bihoreau gris',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'spatuleBlanche' => [
+            'nom' => 'Spatule blanche',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'ibisSacre,' => [
+            'nom' => 'Ibis sacré',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'grandCormoran' => [
+            'nom' => 'Grand Cormoran',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'fouDeBassan' => [
+            'nom' => 'Fou de Bassan',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'aizette' => [
+            'nom' => 'arzette',
+            'commentaire' => "",
+            'images' => []
         ]
     ];
 //"sdfsdfsdfsdf\nzerzerzer\n\n

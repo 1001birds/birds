@@ -88,6 +88,26 @@ class OiseauxController extends AbstractController
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
+    public function apprendreJS(
+        Request $request
+    ) {
+
+//        dump($this->oiseauxManipulator->apprendre());die;
+
+
+//        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
+//        dump($listeOiseaux);
+//        die;
+        return $this->render('apprendre.html.twig',
+            $this->oiseauxManipulator->apprendre()
+        );
+    }
+
+    /**
+     * @OA\Response(response=200,description="Index")
+     * @OA\Tag(name="Default")
+     * @Nelmio\Security(name="Bearer")
+     */
     public function quizUnOiseau(
         Request $request
     ) {
@@ -95,7 +115,18 @@ class OiseauxController extends AbstractController
 //        dump($listeOiseaux);
 //        die;
         return $this->render('quizUnOiseau.html.twig', [
-            'bird' => 1
+            'images' => [
+                'manchotDuCap_0',
+                'cigogneNoire_0',
+                'cailleDesBles_1',
+                'canardSiffleur_0',
+                'engoulventDEurope_0',
+                'martinetAVentreBlanc_0',
+                'bihoreauGris_0',
+                'grebeHuppe_0',
+                'fulmarBoreal_0',
+                'martinetNoir_0'
+            ]
         ]);
     }
 }

@@ -11,6 +11,24 @@ $(document).ready(function() {
         $('#name').removeClass('d-none')
     });
 
+    $(document).on('click', '#apprendre', function (e) {
+        e.preventDefault();
+        console.log('apprendre')
+
+
+                /*
+                 * POST
+                 * */
+                // setLoader();
+                $.post(Routing.generate('apprendre'),
+                    {},
+                    function(response) {
+                    console.log('response ok')
+                    // removeLoader();
+                });
+
+    });
+
     // /*
     // * POST
     // * */
