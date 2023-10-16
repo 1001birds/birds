@@ -177,7 +177,7 @@ class Oiseaux
             'commentaire' => "",
             'images' => []
         ],
-        'ibisSacre,' => [
+        'ibisSacre' => [
             'nom' => 'Ibis sacré',
             'commentaire' => "",
             'images' => []
@@ -192,61 +192,232 @@ class Oiseaux
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'outardeCanepetiere' => [
+            'nom' => 'Outarde canepetière',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'outardeBarbue' => [
+            'nom' => 'Outarde barbue',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'grueCendree' => [
+            'nom' => 'Grue cendrée',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'foulqueMacroule' => [
+            'nom' => 'Foulque macroule',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'gallinulePouleDEau' => [
+            'nom' => "Gallinule poule d'eau",
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'coucouGris' => [
+            'nom' => 'Coucou gris',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'grandGravelot' => [
+            'nom' => 'Grand Gravelot',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'vanneauHuppé' => [
+            'nom' => 'Vanneau huppé',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'huitrierPie' => [
+            'nom' => 'Huîtrier pie',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'echasseBlanche' => [
+            'nom' => 'Échasse blanche',
             'commentaire' => "",
             'images' => []
         ],
-        'aizette' => [
-            'nom' => 'arzette',
+        'avocetteElegante' => [
+            'nom' => 'Avocette élégante',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'oedicnemeCriard' => [
+            'nom' => 'Oedicnème criard',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'chevalierGambette' => [
+            'nom' => 'Chevalier gambette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'chevalierArlequin' => [
+            'nom' => 'Chevalier arlequin',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'chevalierAboyeur' => [
+            'nom' => 'Chevalier aboyeur',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'chevalierCulBlanc' => [
+            'nom' => 'Chevalier cul-blanc',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'chevalierGuignette' => [
+            'nom' => 'Chevalier guignette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'courlisCendre' => [
+            'nom' => 'Courlis cendré',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'barge à queue noire' => [
+            'nom' => 'Barge à queue noire',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'becasseauVariable' => [
+            'nom' => 'Bécasseau variable',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'becassineDesMarais' => [
+            'nom' => 'Bécassine des marais',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'goelandArgente' => [
+            'nom' => 'Goéland argenté',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'sternePierregarin' => [
+            'nom' => 'Sterne pierregarin',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'macareuxMoine' => [
+            'nom' => 'Macareux moine',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'pingouinTorda' => [
+            'nom' => 'Pingouin torda',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'grandLabbe' => [
+            'nom' => 'Grand Labbe',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'buseVariable' => [
+            'nom' => 'Buse variable',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'balbuzardPecheur' => [
+            'nom' => 'Balbuzard pêcheur',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'pygargueAQueueBlanche' => [
+            'nom' => 'Pygargue à queue blanche',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'effraieDesClochers' => [
+            'nom' => 'Effraie des clochers',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'chevecheDAthena' => [
+            'nom' => "Chevêche d'Athéna",
+            'commentaire' => "",
+            'images' => []
+        ],
+        'martinPecheurDEurope' => [
+            'nom' => "Martin-pêcheur d'Europe",
+            'commentaire' => "",
+            'images' => []
+        ],
+        'guepierDEurope' => [
+            'nom' => "Guêpier d'Europe",
+            'commentaire' => "",
+            'images' => []
+        ],
+        'rollierDEurope' => [
+            'nom' => "Rollier d'Europe",
+            'commentaire' => "",
+            'images' => []
+        ],
+        'huppeFasciee' => [
+            'nom' => 'Huppe fasciée',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'picNoir' => [
+            'nom' => 'Pic noir',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'picEpeichette' => [
+            'nom' => 'Pic épeichette',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'fauconPelerin' => [
+            'nom' => 'Faucon pèlerin',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'fauconCrecerelle' => [
+            'nom' => 'Faucon crécerelle',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'alouetteDesChamps' => [
+            'nom' => 'Alouette des champs',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'bergeronnetteGrise' => [
+            'nom' => 'Bergeronnette grise',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'hirondelleRustique' => [
+            'nom' => 'Hirondelle rustique',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'hirondelleDeFenetre' => [
+            'nom' => 'Hirondelle de fenêtre',
             'commentaire' => "",
             'images' => []
         ]
+//        ,
+//        'aizette' => [
+//            'nom' => 'arzette',
+//            'commentaire' => "",
+//            'images' => []
+//        ],
+//        'aizette' => [
+//            'nom' => 'arzette',
+//            'commentaire' => "",
+//            'images' => []
+//        ]
     ];
 //"sdfsdfsdfsdf\nzerzerzer\n\n
 //                zerzerzer
