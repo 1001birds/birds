@@ -165,6 +165,19 @@ class OiseauxManipulator
 //        $stringOiseau = $this->oiseauAuHasard($oiseaux);
     }
 
+    public function quizUnOiseau(
+    ) {
+        $oiseaux = Oiseaux::$oiseaux;
+        /*
+         * PREND DIX IMAGES D OISEAUX AU HASARD
+         * */
+        $imageDdDixOiseauxAuHasard = array();
+        for($i = 0; $i < 10; $i++) {
+            $imageDdDixOiseauxAuHasard[] = $this->imageDUnOiseauAuHasard($oiseaux);
+        }
+        return $imageDdDixOiseauxAuHasard;
+    }
+
     public function apprendre(
     ) {
         $oiseaux = Oiseaux::$oiseaux;

@@ -111,23 +111,42 @@ class OiseauxController extends AbstractController
     public function quizUnOiseau(
         Request $request
     ) {
+//        dump(
+//            $this->oiseauxManipulator->quizUnOiseau()
+//        );
+//        die;
+//        return $this->oiseauxManipulator->quizUnOiseau();
+
 //        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
 //        dump($listeOiseaux);
 //        die;
         return $this->render('quizUnOiseau.html.twig', [
             'images' => [
-                'alouetteDesChamps_0',
-                'becassineDesMarais_0',
-                'balbuzardPecheur_0',
-                'bergeronnetteGrise_0',
-                'buseVariable_0',
-                'chevalierAboyeur_0',
-                'chevalierCulBlanc_0',
-                'chevalierArlequin_0',
-                'chevalierGambette_0',
-                'courlisCendre_0'
+                'bargeAQueueNoire_0',
+                'becasseauVariable_0',
+                'coucouGris_0',
+                'effraieDesClochers_0',
+                'fauconCrecerelle_0',
+                'fauconPelerin_0',
+                'hirondelleRustique_0',
+                'picNoir_0',
+                'pyguargueAQueueBlanche_0',
+                'rollierDEurope_0'
             ]
         ]);
+
+        $jour20231016 = [
+            'alouetteDesChamps_0',
+            'becassineDesMarais_0',
+            'balbuzardPecheur_0',
+            'bergeronnetteGrise_0',
+            'buseVariable_0',
+            'chevalierAboyeur_0',
+            'chevalierCulBlanc_0',
+            'chevalierArlequin_0',
+            'chevalierGambette_0',
+            'courlisCendre_0'
+        ];
 
         $jour20231015 = [
             'manchotDuCap_0',
