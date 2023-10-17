@@ -122,18 +122,31 @@ class OiseauxController extends AbstractController
 //        die;
         return $this->render('quizUnOiseau.html.twig', [
             'images' => [
-                'bargeAQueueNoire_0',
-                'becasseauVariable_0',
-                'coucouGris_0',
-                'effraieDesClochers_0',
-                'fauconCrecerelle_0',
-                'fauconPelerin_0',
-                'hirondelleRustique_0',
-                'picNoir_0',
-                'pyguargueAQueueBlanche_0',
-                'rollierDEurope_0'
+                'combattantVarie_0',
+                'chevecheDAthena_0',
+                'goelandArgente_0',
+                'grandGravelot_0',
+                'grandLabbe_0',
+                'grueCendree_0',
+                'guepierDEurope_0',
+                'hirondelleDeFenetre_0',
+                'huitrierPie_0',
+                'oedicnemeCriard_0'
             ]
         ]);
+
+        $jour20231017 = [
+            'bargeAQueueNoire_0',
+            'becasseauVariable_0',
+            'coucouGris_0',
+            'effraieDesClochers_0',
+            'fauconCrecerelle_0',
+            'fauconPelerin_0',
+            'hirondelleRustique_0',
+            'picNoir_0',
+            'pyguargueAQueueBlanche_0',
+            'rollierDEurope_0'
+        ];
 
         $jour20231016 = [
             'alouetteDesChamps_0',
