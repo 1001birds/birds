@@ -9,14 +9,11 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInt
 
 class OiseauxManipulator
 {
-    protected $tokenStorage;
     protected $params;
 
     public function __construct(
-        TokenStorageInterface $tokenStorage,
         ContainerBagInterface $params
     ) {
-        $this->tokenStorage = $tokenStorage;
         $this->params = $params;
     }
 

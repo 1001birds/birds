@@ -4,30 +4,19 @@ namespace App\Controller;
 
 use App\Manipulator\OiseauxManipulator;
 use App\Mapping\Oiseaux;
-use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Nelmio\ApiDocBundle\Annotation as Nelmio;
 use OpenApi\Annotations as OA;
 
 class OiseauxController extends AbstractController
 {
-    protected $managerRegistry;
-    protected $params;
     protected $env;
     protected $oiseauxManipulator;
 
     public function __construct(
-        ManagerRegistry $managerRegistry,
-        ContainerBagInterface $params,
-        ContainerInterface $container,
         OiseauxManipulator $oiseauxManipulator
     ) {
-        $this->managerRegistry = $managerRegistry;
-        $this->params = $params;
-        $this->container = $container;
         $this->oiseauxManipulator = $oiseauxManipulator;
     }
 
