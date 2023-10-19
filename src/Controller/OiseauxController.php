@@ -111,31 +111,44 @@ class OiseauxController extends AbstractController
 //        die;
         return $this->render('quizUnOiseau.html.twig', [
             'images' => [
-                'combattantVarie_0',
-                'chevecheDAthena_0',
-                'goelandArgente_0',
-                'grandGravelot_0',
-                'grandLabbe_0',
-                'grueCendree_0',
-                'guepierDEurope_0',
-                'hirondelleDeFenetre_0',
-                'huitrierPie_0',
-                'oedicnemeCriard_0'
+                'picEpeichette_0',
+                'pigeonRamier_0',
+                'pingouinTorda_0',
+                'sternePierregarin_0',
+                'picNoir_2',
+                'tourterelleDesBois_0',
+                'martinPecheurDEurope_4',
+                'hirondelleRustique_6',
+                'fauconCrecerelle_7',
+                'eiderADuvet_0'
             ]
         ]);
 
-//        $jour20231017 = [
-//            'bargeAQueueNoire_0',
-//            'becasseauVariable_0',
-//            'coucouGris_0',
-//            'effraieDesClochers_0',
-//            'fauconCrecerelle_0',
-//            'fauconPelerin_0',
-//            'hirondelleRustique_0',
-//            'picNoir_0',
-//            'pyguargueAQueueBlanche_0',
-//            'rollierDEurope_0'
-//        ];
+        $jour20231018 = [
+            'combattantVarie_0',
+            'chevecheDAthena_0',
+            'goelandArgente_0',
+            'grandGravelot_0',
+            'grandLabbe_0',
+            'grueCendree_0',
+            'guepierDEurope_0',
+            'hirondelleDeFenetre_0',
+            'huitrierPie_0',
+            'oedicnemeCriard_0'
+        ];
+
+        $jour20231017 = [
+            'bargeAQueueNoire_0',
+            'becasseauVariable_0',
+            'coucouGris_0',
+            'effraieDesClochers_0',
+            'fauconCrecerelle_0',
+            'fauconPelerin_0',
+            'hirondelleRustique_0',
+            'picNoir_0',
+            'pyguargueAQueueBlanche_0',
+            'rollierDEurope_0'
+        ];
 //
 //        $jour20231016 = [
 //            'alouetteDesChamps_0',
