@@ -11,7 +11,6 @@ use OpenApi\Annotations as OA;
 
 class OiseauxController extends AbstractController
 {
-    protected $env;
     protected $oiseauxManipulator;
 
     public function __construct(
