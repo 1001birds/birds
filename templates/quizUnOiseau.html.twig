@@ -2,44 +2,20 @@
 
 {% block content %}
 <div class="container mt-1 p-3">
-
-
     <div class="row top10">
-
-
         <div class="row">
-            
-
             {% for image in images %}
                 <div class="col-xs-12 col-sm-6 radius5white bottom10">
                     <img id="img"
                          class="img-fluid responsive bottom10"
                          alt="zer"
                          title="zer"
-                         src="{{ '/img/'~image~'.png' }}">
+                         src="{{ asset('/img/'~image~'.png') }}">
                     <input type="text" class="form-control">
                 </div>
             {% endfor %}
         </div>
-
-
-
-
-
-
-
-{#        <div class="col-xs-12 radius5white">#}
-{#            Revenez demain !!!#}
-{#            <br>#}
-{#            <i class="small text-muted">ou après demain ... fo voir</i>#}
-{#        </div>#}
     </div>
-{#    <br>#}
-{#    <img id="img"#}
-{#         class="img-fluid"#}
-{#         alt="zer"#}
-{#         title="zer"#}
-{#         src="{{ '/img/one.jpeg' }}">#}
 {% endblock %}
 
 {% block javascripts %}
