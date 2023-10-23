@@ -122,6 +122,7 @@ class OiseauxController extends AbstractController
                 'alouetteDesChamps_8'
             ]
         ]);
+
 //        $jour20231022 = [
 //            'pyguargueAQueueBlanche_3',
 //            'outardeBarbue_0',
