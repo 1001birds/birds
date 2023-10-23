@@ -407,17 +407,22 @@ class Oiseaux
             'commentaire' => "",
             'images' => []
         ]
-//        ,
-//        'aizette' => [
-//            'nom' => 'arzette',
-//            'commentaire' => "",
-//            'images' => []
-//        ],
-//        'aizette' => [
-//            'nom' => 'arzette',
-//            'commentaire' => "",
-//            'images' => []
-//        ]
+        ,
+        'grosBecCasseNoyaux' => [
+            'nom' => 'Gros-Bec Casse-Noyaux',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'moineauDomestique' => [
+            'nom' => 'Moineau domestique',
+            'commentaire' => "",
+            'images' => []
+        ],
+        'merleNoir' => [
+            'nom' => 'Merle noir',
+            'commentaire' => "",
+            'images' => []
+        ]
     ];
 //"sdfsdfsdfsdf\nzerzerzer\n\n
 //                zerzerzer
