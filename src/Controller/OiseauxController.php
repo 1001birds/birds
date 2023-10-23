@@ -115,7 +115,7 @@ class OiseauxController extends AbstractController
                 'merleNoir_4',
                 'oceaniteTempete_0',
                 'rollierDEurope_2',
-                'cailleDesBles_2',
+                'grosBecCasseNoyaux_0',
                 'canardChipeau_2',
                 'chevalierArlequin_3',
                 'bergeronnetteGrise_7',
