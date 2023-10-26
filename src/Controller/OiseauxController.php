@@ -27,6 +27,7 @@ class OiseauxController extends AbstractController
     public function index(
         Request $request
     ) {
+
         $listeOiseaux = $this->oiseauxManipulator->listeOrdreEtFamille();
         dump($listeOiseaux);
         dump('birds');
