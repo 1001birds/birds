@@ -120,9 +120,9 @@ class OiseauxManipulator
     ) {
         $i = 0;
         $images = array();
-        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/img/';
+        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/';
         while(file_exists($cheminVersDossierImagesOiseaux.$string.'_'.$i.'.png')) {
-            $images[$i] = '/img/'.$string.'_'.$i.'.png';
+            $images[$i] = '/images/'.$string.'_'.$i.'.png';
             $i++;
         }
         return $images;
@@ -132,7 +132,7 @@ class OiseauxManipulator
         $oiseaux
     ) {
 
-        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/img/';
+        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/';
         $count = count(glob($cheminVersDossierImagesOiseaux.'*'));
         $numbers = range(1, $count);
         shuffle($numbers);

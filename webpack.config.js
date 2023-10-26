@@ -12,7 +12,7 @@ Encore
     .copyFiles({
         from: './assets/images',
         // if versioning is enabled, add the file hash too
-        to: 'images/[path][name].[hash:8].[ext]',
+        to: 'images/[path][name].[ext]',
     })
     // public path used by the web server to access the output path
     .setPublicPath('/build')
