@@ -70,6 +70,7 @@ class OiseauxController extends AbstractController
         return $this->render('apprendre.html.twig',
             $this->oiseauxManipulator->apprendre()
         );
+
     }
 
     /**
