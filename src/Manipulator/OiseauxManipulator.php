@@ -9,13 +9,13 @@ use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInt
 
 class OiseauxManipulator
 {
-//    protected $params;
-//
-//    public function __construct(
-//        ContainerBagInterface $params
-//    ) {
-//        $this->params = $params;
-//    }
+    protected $params;
+
+    public function __construct(
+        ContainerBagInterface $params
+    ) {
+        $this->params = $params;
+    }
 
     public function listeOrdreEtFamille(
     ) {
@@ -115,52 +115,52 @@ class OiseauxManipulator
         return $keysOiseaux[$numbers[0]];
     }
 
-//    protected function imagesDUnOiseau(
-//        $string
-//    ) {
-//        $i = 0;
-//        $images = array();
-//        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/img/';
+    protected function imagesDUnOiseau(
+        $string
+    ) {
+        $i = 0;
+        $images = array();
+        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/img/';
+        while(file_exists($cheminVersDossierImagesOiseaux.$string.'_'.$i.'.png')) {
+            $images[$i] = '/img/'.$string.'_'.$i.'.png';
+            $i++;
+        }
+        return $images;
+    }
+
+    protected function imageDUnOiseauAuHasard(
+        $oiseaux
+    ) {
+
+        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/img/';
+        $count = count(glob($cheminVersDossierImagesOiseaux.'*'));
+        $numbers = range(1, $count);
+        shuffle($numbers);
+        $indiceImage = $numbers[0];
+        $i = 0;
+        $imageChoisie = null;
+        $scanDIR = scandir($cheminVersDossierImagesOiseaux);
+        foreach($scanDIR as $file) {
+            if(strpos($file, 'png') !== false) {
+                $i++;
+                if($indiceImage == $i) {
+                    $imageChoisie = $file;
+                }
+            }
+        }
+        return $imageChoisie;
+
+
 //        while(file_exists($cheminVersDossierImagesOiseaux.$string.'_'.$i.'.png')) {
 //            $images[$i] = '/img/'.$string.'_'.$i.'.png';
 //            $i++;
 //        }
-//        return $images;
-//    }
-//
-//    protected function imageDUnOiseauAuHasard(
-//        $oiseaux
-//    ) {
-//
-//        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/img/';
-//        $count = count(glob($cheminVersDossierImagesOiseaux.'*'));
-//        $numbers = range(1, $count);
-//        shuffle($numbers);
-//        $indiceImage = $numbers[0];
-//        $i = 0;
-//        $imageChoisie = null;
-//        $scanDIR = scandir($cheminVersDossierImagesOiseaux);
-//        foreach($scanDIR as $file) {
-//            if(strpos($file, 'png') !== false) {
-//                $i++;
-//                if($indiceImage == $i) {
-//                    $imageChoisie = $file;
-//                }
-//            }
-//        }
-//        return $imageChoisie;
-//
-//
-////        while(file_exists($cheminVersDossierImagesOiseaux.$string.'_'.$i.'.png')) {
-////            $images[$i] = '/img/'.$string.'_'.$i.'.png';
-////            $i++;
-////        }
-//
-////        /*
-////         * PREND UN OISEAU AU HASARD
-////         * */
-////        $stringOiseau = $this->oiseauAuHasard($oiseaux);
-//    }
+
+//        /*
+//         * PREND UN OISEAU AU HASARD
+//         * */
+//        $stringOiseau = $this->oiseauAuHasard($oiseaux);
+    }
 
     public function quizUnOiseau(
     ) {
