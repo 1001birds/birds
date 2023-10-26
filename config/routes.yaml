@@ -17,7 +17,7 @@ index:
 #quizUnOiseau:
     path: /
     #quizUnOiseau
-    defaults: { _controller: 'App\Controller\OiseauxController::quizUnOiseau' }
+    defaults: { _controller: 'App\Controller\OiseauxController::index' }
 #    methods: POST
 #    options:
 #        expose: true
