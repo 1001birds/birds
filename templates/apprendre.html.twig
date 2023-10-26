@@ -14,7 +14,7 @@
                          class="img-fluid responsive radius5white"
                          alt="zer"
                          title="zer"
-                         src="{{ '/images/'~image }}">
+                         src="{{ '/build/images/'~image }}">
                 {% else %}
                     Il y a un problème pour <span class="text-danger">{{ erreur }}</span>
                 {% endif %}
@@ -57,5 +57,5 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type='text/javascript' src="{{ asset('js/apprendre.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('build/js/apprendre.js') }}"></script>
 {% endblock %}

@@ -14,6 +14,11 @@ Encore
         // if versioning is enabled, add the file hash too
         to: 'images/[path][name].[ext]',
     })
+    .copyFiles({
+        from: './assets/js',
+        // if versioning is enabled, add the file hash too
+        to: 'js/[path][name].[hash:8].[ext]',
+    })
     // public path used by the web server to access the output path
     .setPublicPath('/build')
     // only needed for CDN's or subdirectory deploy
@@ -72,12 +77,7 @@ Encore
     //.enableIntegrityHashes(Encore.isProduction())
 
     // uncomment if you're having problems with a jQuery plugin
-    .autoProvidejQuery()
-    .autoProvideVariables({
-        $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
-    })
+    //.autoProvidejQuery()
 ;
 
 module.exports = Encore.getWebpackConfig();
