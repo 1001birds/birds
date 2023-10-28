@@ -1,6 +1,6 @@
-#index:
-#    path: /
-#    defaults: { _controller: 'App\Controller\OiseauxController::index' }
+index:
+    path: /
+    defaults: { _controller: 'App\Controller\OiseauxController::index' }
 
 apprendre:
     path: /apprendre
@@ -13,11 +13,9 @@ apprendreJS:
     options:
         expose: true
 
-index:
-#quizUnOiseau:
-    path: /
-    #quizUnOiseau
-    defaults: { _controller: 'App\Controller\OiseauxController::index' }
+quizzUnOiseau:
+    path: /quizzUnOiseau
+    defaults: { _controller: 'App\Controller\OiseauxController::quizzUnOiseau' }
 #    methods: POST
 #    options:
 #        expose: true

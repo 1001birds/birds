@@ -9,7 +9,7 @@
         #}
         {% if oiseau is not empty %}
             <h4>{{ oiseau.nom }}</h4>
-            <p class="radius5white">{{ commentaireOiseau | nl2br }}</p>
+            <p class="radius5white bottom-100">{{ commentaireOiseau | nl2br }}</p>
 
             <div class="row">
                 {% if images is not empty %}
@@ -52,5 +52,5 @@
 
 {% block javascripts %}
     {{ parent() }}
-    <script type='text/javascript' src="{{ asset('js/birds.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('build/js/birds.js') }}"></script>
 {% endblock %}

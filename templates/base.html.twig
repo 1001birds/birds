@@ -1,63 +1,75 @@
 <!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex, nofollow">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="robots" content="noindex, nofollow">
 
-    <title>Birds</title>
-
-
-    {{ encore_entry_link_tags('app') }}
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
-    <a class="navbar-brand" href="/"><b id="checkStatus">Birds</b></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-{#                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 first">#}
-{#                    <li class="nav-item">#}
-{#                        <a id="apprendre" class="nav-link" href="{{ path('apprendre') }}">Apprendre</a>#}
-{#                    </li>#}
-{#                    <li class="nav-item">#}
-{#                        <a class="nav-link" href="{{ path('quizUnOiseau') }}">Quizz</a>#}
-{#                    </li>#}
-{#                </ul>#}
-
-                {#
-                RECHERCHE
-                #}
-{#                <form action="" class="form-inline mr-5" method="post">#}
-{#                    <input id="searchInput" name="string" class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">#}
-{#                    <button id="searchButton" class="btn btn-info my-2 my-sm-0" type="submit">#}
-{#                        <span class="glyphicons glyphicons-search"></span>#}
-{#                    </button>#}
-{#                </form>#}
+        <title>Birds</title>
 
 
-            </div>
+        {{ encore_entry_link_tags('app') }}
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
 
-</nav>
+    <div class="radius5greylight">
+        <b>
+            <a id="home" class="underline-none" href="{{ path('index') }}">Birds</a></b>
+        <br>
+        <a id="apprendre" class="underline-none" href="{{ path('apprendre') }}">Apprendre</a>
+        <br>
+        <a class="underline-none" href="{{ path('quizzUnOiseau') }}">Quizz</a>
+    </div>
 
-{% block content %}
-{% endblock %}
 
-{% block javascripts %}
+
+
+{#        <nav class="navbar navbar-expand-lg navbar-dark bg-info">#}
+{#            <a class="navbar-brand" href="/"><b id="checkStatus">Birds</b></a>#}
+{#            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">#}
+{#                <span class="navbar-toggler-icon"></span>#}
+{#            </button>#}
+
+{#                    <div class="collapse navbar-collapse" id="navbarNav">#}
+{#                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 first">#}
+{#                            <li class="nav-item">#}
+{#                                <a id="apprendre" class="nav-link" href="{{ path('apprendre') }}">Apprendre</a>#}
+{#                            </li>#}
+{#                            <li class="nav-item">#}
+{#                                <a class="nav-link" href="{{ path('quizzUnOiseau') }}">Quizz</a>#}
+{#                            </li>#}
+{#                        </ul>#}
+
+                        {#
+                        RECHERCHE
+                        #}
+        {#                <form action="" class="form-inline mr-5" method="post">#}
+        {#                    <input id="searchInput" name="string" class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">#}
+        {#                    <button id="searchButton" class="btn btn-info my-2 my-sm-0" type="submit">#}
+        {#                        <span class="glyphicons glyphicons-search"></span>#}
+        {#                    </button>#}
+        {#                </form>#}
+
+
+{#                    </div>#}
+
+{#        </nav>#}
+
+        {% block content %}
+        {% endblock %}
+
+        {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
-    <script type='text/javascript' src="{{ asset('build/js/birds.js') }}"></script>
-    <script type='text/javascript' src="{{ asset('build/js/bootstrap-select.min.js') }}"></script>
-{% endblock %}
+            <script type='text/javascript' src="{{ asset('build/js/bootstrap-select.min.js') }}"></script>
+        {% endblock %}
 
-</body>
+    </body>
 </html>

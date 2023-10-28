@@ -3,6 +3,7 @@
 namespace App\Manipulator;
 
 use App\Mapping\Oiseaux;
+use App\Mapping\Quizz;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
@@ -120,19 +121,18 @@ class OiseauxManipulator
     ) {
         $i = 0;
         $images = array();
-        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/';
+        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/oiseaux/';
         while(file_exists($cheminVersDossierImagesOiseaux.$string.'_'.$i.'.png')) {
-            $images[$i] = '/images/'.$string.'_'.$i.'.png';
+            $images[$i] = '/build/images/oiseaux/'.$string.'_'.$i.'.png';
             $i++;
         }
         return $images;
     }
 
     protected function imageDUnOiseauAuHasard(
-        $oiseaux
     ) {
 
-        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/';
+        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/oiseaux/';
         $count = count(glob($cheminVersDossierImagesOiseaux.'*'));
         $numbers = range(1, $count);
         shuffle($numbers);
@@ -162,17 +162,22 @@ class OiseauxManipulator
 //        $stringOiseau = $this->oiseauAuHasard($oiseaux);
     }
 
-    public function quizUnOiseau(
+    public function quizzUnOiseau(
     ) {
-        $oiseaux = Oiseaux::$oiseaux;
-        /*
-         * PREND DIX IMAGES D OISEAUX AU HASARD
-         * */
-        $imageDdDixOiseauxAuHasard = array();
+        $jourdui = 'j'.(new \DateTime())->format('Ymd');
+        return Quizz::$$jourdui;
+    }
+
+    /*
+     * PREND DIX IMAGES D OISEAUX AU HASARD
+     * */
+    public function imagesDixOiseauxAuHasard(
+    ) {
+        $imagesDixOiseauxAuHasard = array();
         for($i = 0; $i < 10; $i++) {
-            $imageDdDixOiseauxAuHasard[] = $this->imageDUnOiseauAuHasard($oiseaux);
+            $imagesDixOiseauxAuHasard[] = $this->imageDUnOiseauAuHasard();
         }
-        return $imageDdDixOiseauxAuHasard;
+        return $imagesDixOiseauxAuHasard;
     }
 
     public function apprendre(
@@ -181,13 +186,14 @@ class OiseauxManipulator
         /*
          * PREND UN OISEAU AU HASARD
          * */
-        $imageDUnOiseauAuHasard = $this->imageDUnOiseauAuHasard($oiseaux);
+        $imageDUnOiseauAuHasard = $this->imageDUnOiseauAuHasard();
         $arrayImage = explode('_', $imageDUnOiseauAuHasard);
         $stringOiseau = $arrayImage[0];
         /*
          * SI CET OISEAU EXISTE
          * */
         if(isset($oiseaux[$stringOiseau])) {
+//            dump($oiseaux[$stringOiseau]);die;
             return [
                 'image' => $imageDUnOiseauAuHasard,
                 'nom' => $oiseaux[$stringOiseau]['nom']

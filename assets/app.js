@@ -15,8 +15,9 @@ global.$ = global.jQuery = $;
 import 'bootstrap/dist/css/bootstrap.css'
 import '../assets/css/main.css';
 import '../assets/css/jquery-ui.min.css';
-import '../assets/css/dataTables.bootstrap4.min.css';
-import '../assets/css/main.css';
+// import '../assets/css/dataTables.bootstrap4.min.css';
+import '../assets/css/dataTables.bootstrap5.min.css';
+import '../assets/css/responsive.bootstrap.min.css';
 import '../assets/css/filter.css';
 import '../assets/css/bootstrap-select.min.css';
 

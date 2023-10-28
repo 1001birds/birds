@@ -10,6 +10,13 @@ a.disabled, a.disabled:visited, a.disabled:active, a.disabled:hover {
     color: #999;
     cursor: default;
 }
+a.underline-none {
+    text-decoration: none;
+}
+a#home {
+    font-weight: bold;
+    color:  black;
+}
 .dropdown-menu a.disabled, a.disabled:visited, a.disabled:active, a.disabled:hover {
     color: #999;
     cursor: default;

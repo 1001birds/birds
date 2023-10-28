@@ -3,7 +3,6 @@
 namespace App\Controller;
 
 use App\Manipulator\OiseauxManipulator;
-use App\Mapping\Oiseaux;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Nelmio\ApiDocBundle\Annotation as Nelmio;
@@ -32,7 +31,7 @@ class OiseauxController extends AbstractController
         dump($listeOiseaux);
         dump('birds');
 //        die;
-        return $this->render('index.html.twig', [
+        return $this->render('index2.html.twig', [
             'oiseaux' => $this->oiseauxManipulator->listeOrdreEtFamille()
         ]);
     }
@@ -98,31 +97,20 @@ class OiseauxController extends AbstractController
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function quizUnOiseau(
+    public function quizzUnOiseau(
         Request $request
     ) {
 //        dump(
-//            $this->oiseauxManipulator->quizUnOiseau()
+//            $this->oiseauxManipulator->imagesDixOiseauxAuHasard()
 //        );
 //        die;
-//        return $this->oiseauxManipulator->quizUnOiseau();
+//        return $this->oiseauxManipulator->quizzUnOiseau();
 
 //        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
 //        dump($listeOiseaux);
 //        die;
-        return $this->render('quizUnOiseau.html.twig', [
-            'images' => [
-                'merleNoir_2',
-                'merleNoir_3',
-                'merleNoir_4',
-                'oceaniteTempete_0',
-                'rollierDEurope_2',
-                'grosBecCasseNoyaux_0',
-                'canardChipeau_2',
-                'chevalierArlequin_3',
-                'bergeronnetteGrise_7',
-                'alouetteDesChamps_8'
-            ]
+        return $this->render('quizzUnOiseau.html.twig', [
+            'images' => $this->oiseauxManipulator->quizzUnOiseau()
         ]);
 
 //        $jour20231022 = [
