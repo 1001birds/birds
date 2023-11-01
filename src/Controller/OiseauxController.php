@@ -26,14 +26,38 @@ class OiseauxController extends AbstractController
     public function index(
         Request $request
     ) {
+        $countFamilles = 0;
+        $countOiseaux = 0;
+        $listeOrdresEtFamilles = $this->oiseauxManipulator->listeOrdresEtFamilles_3();
+        $countOrdres = count($listeOrdresEtFamilles);
+        foreach ($listeOrdresEtFamilles as $ordreEtFamille) {
 
-        $listeOiseaux = $this->oiseauxManipulator->listeOrdreEtFamille();
-        dump($listeOiseaux);
-        dump('birds');
+            foreach ($ordreEtFamille['familles'] as $famille) {
+                $countFamilles++;
+
+                foreach ($famille['oiseaux'] as $oiseau) {
+//                    dump($oiseau);
+//                    die;
+                    $countOiseaux++;
+                }
+            }
+//            dump($ordreEtFamille['familles']);
+//            die;
+        }
+
+
+
+//        dump($countFamilles.' - '.$countOiseaux.' - '.$countOrdres);
 //        die;
-        return $this->render('index2.html.twig', [
-            'oiseaux' => $this->oiseauxManipulator->listeOrdreEtFamille()
+        return $this->render('index3.html.twig', [
+            'ordresEtFamilles' => $this->oiseauxManipulator->listeOrdresEtFamilles_3(),
+            'countOrdres' => $countOrdres,
+            'countFamilles' => $countFamilles,
+            'countOiseaux' => $countOiseaux
         ]);
+//        return $this->render('index2.html.twig', [
+//            'oiseaux' => $this->oiseauxManipulator->listeOrdresEtFamilles()
+//        ]);
     }
 
     /**

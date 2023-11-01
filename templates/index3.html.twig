@@ -3,7 +3,7 @@
 {% block content %}
 <div class="container mt-4 p-4">
 
-    {% if oiseaux is defined %}
+    {% if ordresEtFamilles is defined %}
         {#
         COUNTS
         #}
@@ -12,9 +12,9 @@
                 <div class="radius5white bottom10">
                     <b>Actuellement disponible</b>
                     <br>
-                    {{ oiseaux.countOrdres }} ordres,
-                    {{ oiseaux.countFamilles }} familles,
-                    {{ oiseaux.countOiseaux }} oiseaux
+                    {{ countOrdres }} ordres,
+                    {{ countFamilles }} familles,
+                    {{ countOiseaux }} oiseaux
                 </div>
             </div>
         </div>
@@ -39,28 +39,28 @@
                     </tr>
                     </thead>
                     <tbody>
-                    {% set trNomOrdre = '' %}
-                    {% set trNomFamille = '' %}
-                    {% for nomOrdre, ordre in oiseaux.listeOiseaux.ordre %}
-                        {% for nomFamille, famille in ordre %}
-                            {% for oiseau in famille %}
+                    {% set trStringOrdre = '' %}
+                    {% set trStringFamille = '' %}
+                    {% for stringOrdre, ordre in ordresEtFamilles %}
+                        {% for stringFamille, famille in ordre.familles %}
+                            {% for stringOiseau, oiseau in famille.oiseaux %}
                                 <tr class="table-warning">
                                     <td class="hidden-xs">
-                                        <b>{{ trNomOrdre == nomOrdre ? ' ' : (nomOrdre | capitalize) }}</b>
+                                        <b>{{ trStringOrdre == stringOrdre ? ' ' : (ordre.nom | capitalize) }}</b>
                                         <br>
-                                        <span class="text-muted">{{ trNomFamille == nomFamille ? ' ' : (nomFamille | capitalize) }}</span>
+                                        <span class="text-muted">{{ trStringFamille == stringFamille ? ' ' : (famille.nom | capitalize) }}</span>
                                     </td>
                                     <td>
                                         {#
                                         NOM
                                         #}
-                                        <a href="{{ path('oiseau', {string:oiseau.string}) }}">{{ oiseau.nom }}</a>
+                                        <a href="{{ path('oiseau', {string:stringOiseau}) }}">{{ oiseau.nom }}</a>
                                         <br>
                                         <span class="text-muted small">{{ oiseau.espece }}</span>
                                     </td>
                                 </tr>
-                                {% set trNomFamille = nomFamille %}
-                                {% set trNomOrdre = nomOrdre %}
+                                {% set trStringFamille = stringFamille %}
+                                {% set trStringOrdre = stringOrdre %}
                             {% endfor %}
                         {% endfor %}
                     {% endfor %}

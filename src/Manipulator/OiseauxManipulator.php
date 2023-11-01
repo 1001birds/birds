@@ -3,6 +3,7 @@
 namespace App\Manipulator;
 
 use App\Mapping\Oiseaux;
+use App\Mapping\OrdreEtFamilles;
 use App\Mapping\Quizz;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface;
@@ -18,9 +19,44 @@ class OiseauxManipulator
         $this->params = $params;
     }
 
-    public function listeOrdreEtFamille(
+    public function listeOrdresEtFamilles(
     ) {
         $ordesEtFamilles = Oiseaux::$ordesEtFamilles;
+        $listeOiseaux = [];
+        $countOrdres = 0;
+        $countFamilles = 0;
+        $countOiseaux = 0;
+        foreach($ordesEtFamilles as $ordre => $familles) {
+//            dump($ordre);die;
+            $listeOiseaux['ordre'][$ordre] = $familles;
+            $countOrdres++;
+            foreach($familles as $famille => $oiseaux) {
+                $countFamilles++;
+                foreach($oiseaux as $oiseau) {
+                    $countOiseaux++;
+                }
+            }
+        }
+        return [
+            'countOrdres' => $countOrdres,
+            'countFamilles' => $countFamilles,
+            'countOiseaux' => $countOiseaux,
+            'listeOiseaux' => $listeOiseaux
+        ];
+    }
+
+    public function listeOrdresEtFamilles_3(
+    ) {
+        return
+        $ordesEtFamilles = OrdreEtFamilles::$ordresEtFamilles;
+        $infos = [
+            'ordesEtFamilles' => OrdreEtFamilles::$ordresEtFamilles,
+            'oiseaux' => Oiseaux::$oiseaux
+        ];
+
+
+        dump($ordesEtFamilles);die;
+
         $listeOiseaux = [];
         $countOrdres = 0;
         $countFamilles = 0;
@@ -185,21 +221,48 @@ class OiseauxManipulator
         $oiseaux = Oiseaux::$oiseaux;
         /*
          * PREND UN OISEAU AU HASARD
+         * martinetAVentreBlanc
          * */
-        $imageDUnOiseauAuHasard = $this->imageDUnOiseauAuHasard();
+        $imageDUnOiseauAuHasard = $this->imageDUnOiseauAuHasard();//'martinetAVentreBlanc_0.png';//
+//        dump($imageDUnOiseauAuHasard);die;
+
+
         $arrayImage = explode('_', $imageDUnOiseauAuHasard);
         $stringOiseau = $arrayImage[0];
         /*
          * SI CET OISEAU EXISTE
          * */
         if(isset($oiseaux[$stringOiseau])) {
-//            dump($oiseaux[$stringOiseau]);die;
+            $partsLien = explode('|', $oiseaux[$stringOiseau]['lien']);
+            $stringOrdre = $partsLien[0];
+            $stringFamille = $partsLien[1];
+            $ordesEtFamilles = OrdreEtFamilles::$ordresEtFamilles;
+            $ordre = '';
+            $famille = '';
+            $espece = '';
+            if(isset($ordesEtFamilles[$stringOrdre])) {
+                $ordre = $ordesEtFamilles[$stringOrdre]['nom'];
+                if(isset($ordesEtFamilles[$stringOrdre]['familles'][$stringFamille])) {
+                    $famille = $ordesEtFamilles[$stringOrdre]['familles'][$stringFamille]['nom'];
+                    if(isset($ordesEtFamilles[$stringOrdre]['familles'][$stringFamille]['oiseaux'][$stringOiseau])) {
+                        $espece = $ordesEtFamilles[$stringOrdre]['familles'][$stringFamille]['oiseaux'][$stringOiseau]['espece'];
+                    }
+                }
+            }
             return [
                 'image' => $imageDUnOiseauAuHasard,
-                'nom' => $oiseaux[$stringOiseau]['nom']
+                'nom' => $oiseaux[$stringOiseau]['nom'],
+                'ordre' => $ordre,
+                'famille' => $famille,
+                'espece' => $espece
             ];
         }
         return [
+            'image' => $imageDUnOiseauAuHasard,
+            'nom' => '',
+            'ordre' => '',
+            'famille' => '',
+            'espece' => '',
             'erreur' => $stringOiseau
         ];
     }
