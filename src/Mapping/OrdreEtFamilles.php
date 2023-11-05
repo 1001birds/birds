@@ -11,25 +11,57 @@ class OrdreEtFamilles
                 'anatides' => [
                     'nom' => 'Anatides',
                     'oiseaux' => [
-                        'bernacheCravant' => [
-                            'nom' => 'Bernache cravant',
-                            'string' => 'bernacheCravant',
-                            'espece' => 'Branta bernicla'
+                        'canardColvert' => [
+                            'nom' => 'Canard colvert',
+                            'espece' => ''
                         ],
-                        'eiderADuvet' => [
-                            'nom' => 'Eider à duvet',
-                            'string' => 'eiderADuvet',
-                            'espece' => 'Somateria mollissima'
+                        'canardPilet' => [
+                            'nom' => 'Canard pilet',
+                            'espece' => 'Anas acuta'
                         ],
-                        'tadorneDeBelon' => [
-                            'nom' => 'Tadorne de Belon',
-                            'string' => 'tadorneDeBelon',
-                            'espece' => 'Tadorna tadorna'
+                        'canardSiffleur' => [
+                            'nom' => 'Canard siffleur',
+                            'espece' => 'Anas penelope'
                         ],
                         'canardSouchet'=> [
                             'nom' => 'Canard souchet',
-                            'string' => 'canardSouchet',
                             'espece' => 'Anas clypeata'
+                        ],
+                        'fuliguleMorillon'=> [
+                            'nom' => 'Fuligule morillon',
+                            'espece' => ''
+                        ],
+                        'sarcelleDHiver' => [
+                            'nom' => "Sarcelle d'Hiver",
+                            'espece' => 'Anas crecca'
+                        ],
+                        'tadorneDeBelon' => [
+                            'nom' => 'Tadorne de Belon',
+                            'espece' => 'Tadorna tadorna'
+                        ],
+                        'canardChipeau' => [
+                            'nom' => 'Canard chipeau',
+                            'espece' => 'Anas strepera'
+                        ],
+                        'eiderADuvet' => [
+                            'nom' => 'Eider à duvet',
+                            'espece' => 'Somateria mollissima'
+                        ],
+                        'harleHuppe'=> [
+                            'nom' => 'Harle huppé',
+                            'espece' => ''
+                        ],
+                        'oieRieuse'=> [
+                            'nom' => 'Oie rieuse',
+                            'espece' => ''
+                        ],
+                        'oieCendree'=> [
+                            'nom' => 'Oie cendrée',
+                            'espece' => ''
+                        ],
+                        'bernacheCravant' => [
+                            'nom' => 'Bernache cravant',
+                            'espece' => 'Branta bernicla'
                         ]
                     ]
                 ]
@@ -43,8 +75,11 @@ class OrdreEtFamilles
                     'oiseaux' => [
                         'cailleDesBles' => [
                             'nom' => 'Caille des blés',
-                            'string' => 'cailleDesBles',
                             'espece' => 'Coturnix coturnix'
+                        ],
+                        'lagopedeAlpin' => [
+                            'nom' => 'Lagopède alpin',
+                            'espece' => ''
                         ]
                     ]
                 ],
@@ -53,7 +88,6 @@ class OrdreEtFamilles
                     'oiseaux' => [
                         'grandTetras' => [
                             'nom' => 'Grand Tétras',
-                            'string' => 'grandTetras',
                             'espece' => 'Tetrao urogallus'
                         ]
                     ]
@@ -66,15 +100,13 @@ class OrdreEtFamilles
                 'columbides' => [
                     'nom' => 'Columbidés',
                     'oiseaux' => [
-                        'tourterelleDesBois' => [
-                            'nom' => 'Tourterelle des bois',
-                            'string' => 'tourterelleDesBois',
-                            'espece' => 'Streptopelia turtur'
-                        ],
                         'pigeonRamier' => [
                             'nom' => 'Pigeon ramier',
-                        'string' => 'pigeonRamier',
-                        'espece' => 'Columba palumbus'
+                            'espece' => 'Columba palumbus'
+                        ],
+                        'tourterelleDesBois' => [
+                            'nom' => 'Tourterelle des bois',
+                            'espece' => 'Streptopelia turtur'
                         ]
                     ]
                 ]
@@ -88,7 +120,6 @@ class OrdreEtFamilles
                     'oiseaux' => [
                         'gangaCata' => [
                             'nom' => 'Ganga cata',
-                            'string' => 'gangaCata',
                             'espece' => 'Pterocles alchata'
                         ]
                     ]
@@ -159,37 +190,19 @@ class OrdreEtFamilles
                 ]
             ]
         ],
-        'sphenisciformes' => [
-            'nom' => 'Sphénisciformes',
-            'familles' => [
-                'spheniscides' => [
-                    'nom' => 'Sphéniscidés',
-                    'oiseaux' => [
-                        'manchotDuCap' => [
-                            'nom' => 'Manchot du Cap',
-                            'espece' => 'Spheniscus demersus'
-                        ],
-                        'manchotEmpereur' => [
-                            'nom' => 'Manchot empereur',
-                            'espece' => 'Aptenodytes forsteri'
-                        ]
-                    ]
-                ]
-            ]
-        ],
         'gaviiformes' => [
             'nom' => 'Gaviiformes',
             'familles' => [
                 'gaviides' => [
                     'nom' => 'Gaviidés',
                     'oiseaux' => [
-                        'plongeonImbrin' => [
-                            'nom' => 'Plongeon imbrin',
-                            'espece' => 'Gavia immer'
-                        ],
                         'plongeonCatmarin' => [
                             'nom' => 'Plongeon catmarin',
                             'espece' => 'Gavia stellata'
+                        ],
+                        'plongeonImbrin' => [
+                            'nom' => 'Plongeon imbrin',
+                            'espece' => 'Gavia immer'
                         ]
                     ]
                 ]
@@ -228,13 +241,13 @@ class OrdreEtFamilles
                 'ciconiides' => [
                     'nom' => 'Ciconiidés',
                     'oiseaux' => [
-                        'cigogneNoire' => [
-                            'nom' => 'Cigogne noire',
-                            'espece' => 'Ciconia nigra'
-                        ],
                         'cigogneBlanche' => [
                             'nom' => 'Cigogne blanche',
                             'espece' => 'Ciconia ciconia'
+                        ],
+                        'cigogneNoire' => [
+                            'nom' => 'Cigogne noire',
+                            'espece' => 'Ciconia nigra'
                         ]
                     ]
                 ]
@@ -246,17 +259,25 @@ class OrdreEtFamilles
                 'ardeides' => [
                     'nom' => 'Ardéidés',
                     'oiseaux' => [
-                        'heronPourpre' => [
-                            'nom' => 'Héron pourpré',
-                            'espece' => 'Ardea purpurea'
-                        ],
                         'aigretteGarzette' => [
                             'nom' => 'Aigrette garzette',
                             'espece' => 'Egretta garzetta'
                         ],
+                        'butorEtoile' => [
+                            'nom' => 'Butor étoilé',
+                            'espece' => ''
+                        ],
                         'bihoreauGris' => [
                             'nom' => 'Bihoreau gris',
                             'espece' => 'Nycticorax nycticorax'
+                        ],
+                        'heronPourpre' => [
+                            'nom' => 'Héron pourpré',
+                            'espece' => 'Ardea purpurea'
+                        ],
+                        'blongiosNain' => [
+                            'nom' => 'Blongios nain',
+                            'espece' => ''
                         ]
                     ]
                 ],
@@ -284,6 +305,10 @@ class OrdreEtFamilles
                         'grandCormoran' => [
                             'nom' => 'Grand Cormoran',
                             'espece' => 'Phalacrocorax carbo'
+                        ],
+                        'cormoranHuppe' => [
+                            'nom' => 'Cormoran huppé',
+                            'espece' => ''
                         ]
                     ]
                 ],
@@ -301,8 +326,8 @@ class OrdreEtFamilles
         'otidiformes' => [
             'nom' => 'Otidiformes',
             'familles' => [
-                'phalacrocoracides' => [
-                    'nom' => 'Phalacrocoracidés',
+                'otidides' => [
+                    'nom' => 'Otididés',
                     'oiseaux' => [
                         'outardeCanepetiere' => [
                             'nom' => 'Outarde canepetière',
@@ -346,7 +371,7 @@ class OrdreEtFamilles
         'cuculiformes' => [
             'nom' => 'Cuculiformes',
             'familles' => [
-                'cuculidés' => [
+                'cuculides' => [
                     'nom' => 'Cuculidés',
                     'oiseaux' => [
                         'coucouGris' => [
@@ -360,16 +385,16 @@ class OrdreEtFamilles
         'charadriiformes' => [
             'nom' => 'Charadriiformes',
             'familles' => [
-                'charadriides' => [
-                    'nom' => 'Charadriidés',
+                'recurvirostrides' => [
+                    'nom' => 'Récurvirostridés',
                     'oiseaux' => [
-                        'grandGravelot' => [
-                            'nom' => 'Grand Gravelot',
-                            'espece' => 'Charadrius hiaticula'
+                        'avocetteElegante' => [
+                            'nom' => 'Avocette élégante',
+                            'espece' => 'Recurvirostra avosetta'
                         ],
-                        'vanneauHuppe' => [
-                            'nom' => 'Vanneau huppé',
-                            'espece' => 'Vanellus vanellus'
+                        'echasseBlanche' => [
+                            'nom' => 'Échasse blanche',
+                            'espece' => 'Himantopus himantopus'
                         ]
                     ]
                 ],
@@ -379,19 +404,6 @@ class OrdreEtFamilles
                         'huitrierPie' => [
                             'nom' => 'Huîtrier pie',
                             'espece' => 'Haematopus ostralegus'
-                        ]
-                    ]
-                ],
-                'recurvirostrides' => [
-                    'nom' => 'Récurvirostridés',
-                    'oiseaux' => [
-                        'echasseBlanche' => [
-                            'nom' => 'Échasse blanche',
-                            'espece' => 'Himantopus himantopus'
-                        ],
-                        'avocetteElegante' => [
-                            'nom' => 'Avocette élégante',
-                            'espece' => 'Recurvirostra avosetta'
                         ]
                     ]
                 ],
@@ -407,21 +419,37 @@ class OrdreEtFamilles
                 'scolopacides' => [
                     'nom' => 'Scolopacidés',
                     'oiseaux' => [
-                        'chevalierGambette' => [
-                            'nom' => 'Chevalier gambette',
-                            'espece' => 'Tringa totanus'
+                        'bargeAQueueNoire' => [
+                            'nom' => 'Barge à queue noire',
+                            'espece' => 'Limosa limosa'
+                        ],
+                        'bargeRousse' => [
+                            'nom' => 'Barge rousse',
+                            'espece' => ''
+                        ],
+                        'becasseauCocorli' => [
+                            'nom' => 'Bécasseau cocorli',
+                            'espece' => ''
+                        ],
+                        'becasseauVariable' => [
+                            'nom' => 'Bécasseau variable',
+                            'espece' => 'Calidris alpina'
+                        ],
+                        'becassineDesMarais' => [
+                            'nom' => 'Bécassine des marais',
+                            'espece' => 'Gallinago gallinago'
                         ],
                         'chevalierArlequin' => [
                             'nom' => 'Chevalier arlequin',
                             'espece' => 'Tringa erythropus'
                         ],
+                        'chevalierGambette' => [
+                            'nom' => 'Chevalier gambette',
+                            'espece' => 'Tringa totanus'
+                        ],
                         'chevalierAboyeur' => [
                             'nom' => 'Chevalier aboyeur',
                             'espece' => 'Tringa nebularia'
-                        ],
-                        'combattantVarie' => [
-                            'nom' => 'Combattant varié',
-                            'espece' => 'Philomachus pugnax'
                         ],
                         'chevalierCulBlanc' => [
                             'nom' => 'Chevalier cul-blanc',
@@ -431,27 +459,40 @@ class OrdreEtFamilles
                             'nom' => 'Chevalier guignette',
                             'espece' => 'Actitis hypoleucos'
                         ],
+                        'combattantVarie' => [
+                            'nom' => 'Combattant varié',
+                            'espece' => 'Philomachus pugnax'
+                        ],
                         'courlisCendre' => [
                             'nom' => 'Courlis cendré',
                             'espece' => 'Numenius arquata'
                         ],
-                        'bargeAQueueNoire' => [
-                            'nom' => 'Barge à queue noire',
-                            'espece' => 'Limosa limosa'
+                    ]
+                ],
+                'charadriides' => [
+                    'nom' => 'Charadriidés',
+                    'oiseaux' => [
+                        'grandGravelot' => [
+                            'nom' => 'Grand Gravelot',
+                            'espece' => 'Charadrius hiaticula'
                         ],
-                        'becasseauVariable' => [
-                            'nom' => 'Bécasseau variable',
-                            'espece' => 'Calidris alpina'
+                        'pluvierDore' => [
+                            'nom' => 'Pluvier doré',
+                            'espece' => ''
                         ],
-                        'becassineDesMarais' => [
-                            'nom' => 'Bécassine des marais',
-                            'espece' => 'Gallinago gallinago'
-                        ]
+                        'vanneauHuppe' => [
+                            'nom' => 'Vanneau huppé',
+                            'espece' => 'Vanellus vanellus'
+                        ],
                     ]
                 ],
                 'larides' => [
                     'nom' => 'Laridés',
                     'oiseaux' => [
+                        'goelandMarin' => [
+                            'nom' => 'Goéland marin',
+                            'espece' => ''
+                        ],
                         'goelandArgente' => [
                             'nom' => 'Goéland argenté',
                             'espece' => 'Larus argentatus'
@@ -459,29 +500,45 @@ class OrdreEtFamilles
                         'sternePierregarin' => [
                             'nom' => 'Sterne pierregarin',
                             'espece' => 'Sterna hirundo'
+                        ],
+                        'sterneCaugek' => [
+                            'nom' => 'Sterne caugek',
+                            'espece' => ''
+                        ],
+                        'mouetteRieuse' => [
+                            'nom' => 'Mouette rieuse',
+                            'espece' => ''
+                        ],
+                    ]
+                ],
+                'stercorarides' => [
+                    'nom' => 'Stercoraridés',
+                    'oiseaux' => [
+                        'labbePomarin' => [
+                            'nom' => 'Labbe pomarin',
+                            'espece' => ''
+                        ],
+                        'grandLabbe' => [
+                            'nom' => 'Grand Labbe',
+                            'espece' => 'Stercorarius skua'
                         ]
                     ]
                 ],
                 'alcides' => [
                     'nom' => 'Alcidés',
                     'oiseaux' => [
+                        'pingouinTorda' => [
+                            'nom' => 'Pingouin torda',
+                            'espece' => 'Alca torda'
+                        ],
+                        'guillemotDeTroil' => [
+                            'nom' => 'Guillemot de troïl',
+                            'espece' => ''
+                        ],
                         'macareuxMoine' => [
                             'nom' => 'Macareux moine',
                             'espece' => 'Fratercula arctica'
                         ],
-                        'pingouinTorda' => [
-                            'nom' => 'Pingouin torda',
-                            'espece' => 'Alca torda'
-                        ]
-                    ]
-                ],
-                'stercorarides' => [
-                    'nom' => 'Stercoraridés',
-                    'oiseaux' => [
-                        'grandLabbe' => [
-                            'nom' => 'Grand Labbe',
-                            'espece' => 'Stercorarius skua'
-                        ]
                     ]
                 ]
             ]
@@ -496,10 +553,30 @@ class OrdreEtFamilles
                             'nom' => 'Buse variable',
                             'espece' => 'Buteo buteo'
                         ],
+                        'epervierDEurope' => [
+                            'nom' => "Epervier d'Europe",
+                            'espece' => ''
+                        ],
+                        'percnoptereDEgypte' => [
+                            'nom' => "Percnoptère d'Egypte",
+                            'espece' => ''
+                        ],
+                        'vautourFauve' => [
+                            'nom' => 'Vautour fauve',
+                            'espece' => ''
+                        ],
+                        'gypaeteBarbu' => [
+                            'nom' => 'Gypaète barbu',
+                            'espece' => ''
+                        ],
+                        'circaeteJeanLeBlanc' => [
+                            'nom' => 'Circaète Jean-le-Blanc',
+                            'espece' => ''
+                        ],
                         'pygargueAQueueBlanche' => [
                             'nom' => 'Pygargue à queue blanche',
                             'espece' => 'Haliaeetus albicilla'
-                        ]
+                        ],
                     ]
                 ],
                 'pandionides' => [
@@ -516,8 +593,41 @@ class OrdreEtFamilles
         'strigiformes' => [
             'nom' => 'Strigiformes',
             'familles' => [
-                'tytonides,' => [
-                    'nom' => 'Tytonidés,',
+                'strigides' => [
+                    'nom' => 'Strigidés',
+                    'oiseaux' => [
+                        'chevecheDAthena' => [
+                            'nom' => "Chevêche d'Athéna",
+                            'espece' => 'Athene noctua'
+                        ],
+                        'chouetteHulotte' => [
+                            'nom' => 'Chouette hulotte',
+                            'espece' => ''
+                        ],
+                        'hibouMoyenDuc' => [
+                            'nom' => 'Hibou moyen-duc',
+                            'espece' => ''
+                        ],
+                        'hibouDesMarais' => [
+                            'nom' => 'Hibou des marais',
+                            'espece' => ''
+                        ],
+                        'petitDucScops' => [
+                            'nom' => 'Petit-duc scops',
+                            'espece' => ''
+                        ],
+                        'grandDucDEurope' => [
+                            'nom' => "Grand-duc d'Europe",
+                            'espece' => ''
+                        ],
+                        'chouetteDeTengmalm' => [
+                            'nom' => 'Chouette de tengmalm',
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                'tytonides' => [
+                    'nom' => 'Tytonidés',
                     'oiseaux' => [
                         'effraieDesClochers' => [
                             'nom' => 'Effraie des clochers',
@@ -525,29 +635,11 @@ class OrdreEtFamilles
                         ]
                     ]
                 ],
-                'strigides' => [
-                    'nom' => 'Strigidés',
-                    'oiseaux' => [
-                        'chevecheDAthena' => [
-                            'nom' => "Chevêche d'Athéna",
-                            'espece' => 'Athene noctua'
-                        ]
-                    ]
-                ]
             ]
         ],
         'coraciiformes' => [
             'nom' => 'Coraciiformes',
             'familles' => [
-                'alcedinides' => [
-                    'nom' => 'Alcédinidés',
-                    'oiseaux' => [
-                        'martinPecheurDEurope' => [
-                            'nom' => "Martin-pêcheur d'Europe",
-                            'espece' => 'Alcedo atthis'
-                        ]
-                    ]
-                ],
                 'meropides' => [
                     'nom' => 'Méropidés',
                     'oiseaux' => [
@@ -565,14 +657,23 @@ class OrdreEtFamilles
                             'espece' => 'Coracias garrulus'
                         ]
                     ]
-                ]
+                ],
+                'alcedinides' => [
+                    'nom' => 'Alcédinidés',
+                    'oiseaux' => [
+                        'martinPecheurDEurope' => [
+                            'nom' => "Martin-pêcheur d'Europe",
+                            'espece' => 'Alcedo atthis'
+                        ]
+                    ]
+                ],
             ]
         ],
         'bucerotiformes' => [
             'nom' => 'Bucérotiformes',
             'familles' => [
-                'upupides,' => [
-                    'nom' => 'Upupidés,',
+                'upupides' => [
+                    'nom' => 'Upupidés',
                     'oiseaux' => [
                         'huppeFasciee' => [
                             'nom' => 'Huppe fasciée',
@@ -585,8 +686,8 @@ class OrdreEtFamilles
         'piciformes' => [
             'nom' => 'Piciformes',
             'familles' => [
-                'upupides,' => [
-                    'nom' => 'Upupidés,',
+                'picides' => [
+                    'nom' => 'Picidés',
                     'oiseaux' => [
                         'picNoir' => [
                             'nom' => 'Pic noir',
@@ -595,6 +696,14 @@ class OrdreEtFamilles
                         'picEpeichette' => [
                             'nom' => 'Pic épeichette',
                             'espece' => 'Dendrocopos minor'
+                        ],
+                        'picEpeiche' => [
+                            'nom' => 'Pic épeiche',
+                            'espece' => ''
+                        ],
+                        'picVert' => [
+                            'nom' => 'Pic vert',
+                            'espece' => ''
                         ]
                     ]
                 ]
@@ -603,8 +712,8 @@ class OrdreEtFamilles
         'falconiformes' => [
             'nom' => 'Falconiformes',
             'familles' => [
-                'falconides,' => [
-                    'nom' => 'Falconidés,',
+                'falconides' => [
+                    'nom' => 'Falconidés',
                     'oiseaux' => [
                         'fauconPelerin' => [
                             'nom' => 'Faucon pèlerin',
@@ -618,5 +727,161 @@ class OrdreEtFamilles
                 ]
             ]
         ],
+        'passeriformes' => [
+            'nom' => 'Passériformes',
+            'familles' => [
+                'fringillides' => [
+                    'nom' => 'Fringillidés',
+                    'oiseaux' => [
+                        'pinsonDesArbres' => [
+                            'nom' => 'Pinson des arbres',
+                            'espece' => ''
+                        ],
+                        'bouvreuilPivoine' => [
+                            'nom' => 'Bouvreuil pivoine',
+                            'espece' => ''
+                        ],
+                        'grosBecCasseNoyaux' => [
+                            'nom' => 'Gros-bec casse-noyaux',
+                            'espece' => 'C. coccothraustes'
+                        ],
+                        'verdierDEurope' => [
+                            'nom' => "Verdier d'Europe",
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                'turdides' => [
+                    'nom' => 'Turdidés',
+                    'oiseaux' => [
+                        'griveMusicienne' => [
+                            'nom' => 'Grive musicienne',
+                            'espece' => ''
+                        ],
+                        'merleNoir' => [
+                            'nom' => 'Merle noir',
+                            'espece' => 'Turdus merula'
+                        ]
+                    ]
+                ],
+                'parides' => [
+                    'nom' => 'Paridés',
+                    'oiseaux' => [
+                        'mesangeBleue' => [
+                            'nom' => 'Mésange bleue',
+                            'espece' => ''
+                        ],
+                        'mesangeCharbonniere' => [
+                            'nom' => 'Mésange charbonnière',
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                'passerides' => [
+                    'nom' => 'Passéridés',
+                    'oiseaux' => [
+                        'moineauDomestique' => [
+                            'nom' => 'Moineau domestique',
+                            'espece' => 'Passer domesticus'
+                        ]
+                    ]
+                ],
+                'prunellides' => [
+                    'nom' => 'Prunellidés',
+                    'oiseaux' => [
+                        'accenteurMouchet' => [
+                            'nom' => 'Accenteur mouchet',
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                'troglodytides' => [
+                    'nom' => 'Troglodytidés',
+                    'oiseaux' => [
+                        'troglodyteMignon' => [
+                            'nom' => 'Troglodyte mignon',
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                'muscicapides' => [
+                    'nom' => 'Muscicapidés',
+                    'oiseaux' => [
+                        'rougegorgeFamilier' => [
+                            'nom' => 'Rougegorge familier',
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                'hirundinides' => [
+                    'nom' => 'Hirundinidés',
+                    'oiseaux' => [
+                        'hirondelleRustique' => [
+                            'nom' => 'Hirondelle rustique',
+                            'espece' => 'Hirundo rustica'
+                        ],
+                        'hirondelleDeFenetre' => [
+                            'nom' => 'Hirondelle de fenêtre',
+                            'espece' => 'Delichon urbicum'
+                        ]
+                    ]
+                ],
+                'corvides' => [
+                    'nom' => 'Corvidés',
+                    'oiseaux' => [
+                        'choucasDesTours' => [
+                            'nom' => 'Choucas des tours',
+                            'espece' => ''
+                        ],
+                        'geaiDesChenes' => [
+                            'nom' => 'Geai des chênes',
+                            'espece' => ''
+                        ]
+                    ]
+                ],
+                /*
+                 * Y SONT PAS
+                 * */
+                'alaudides' => [
+                    'nom' => 'Alaudidés',
+                    'oiseaux' => [
+                        'alouetteDesChamps' => [
+                            'nom' => 'Alouette des champs',
+                            'espece' => 'Alauda arvensis'
+                        ]
+                    ]
+                ],
+                'motacillides' => [
+                    'nom' => 'Motacillidés',
+                    'oiseaux' => [
+                        'bergeronnetteGrise' => [
+                            'nom' => 'Bergeronnette grise',
+                            'espece' => 'Motacilla alba'
+                        ]
+                    ]
+                ],
+            ]
+        ],
+        /*
+         * Y SONT PAS
+         * */
+        'sphenisciformes' => [
+            'nom' => 'Sphénisciformes',
+            'familles' => [
+                'spheniscides' => [
+                    'nom' => 'Sphéniscidés',
+                    'oiseaux' => [
+                        'manchotDuCap' => [
+                            'nom' => 'Manchot du Cap',
+                            'espece' => 'Spheniscus demersus'
+                        ],
+                        'manchotEmpereur' => [
+                            'nom' => 'Manchot empereur',
+                            'espece' => 'Aptenodytes forsteri'
+                        ]
+                    ]
+                ]
+            ]
+        ]
     ];
 }

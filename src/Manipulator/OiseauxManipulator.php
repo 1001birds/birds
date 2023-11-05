@@ -19,31 +19,31 @@ class OiseauxManipulator
         $this->params = $params;
     }
 
-    public function listeOrdresEtFamilles(
-    ) {
-        $ordesEtFamilles = Oiseaux::$ordesEtFamilles;
-        $listeOiseaux = [];
-        $countOrdres = 0;
-        $countFamilles = 0;
-        $countOiseaux = 0;
-        foreach($ordesEtFamilles as $ordre => $familles) {
-//            dump($ordre);die;
-            $listeOiseaux['ordre'][$ordre] = $familles;
-            $countOrdres++;
-            foreach($familles as $famille => $oiseaux) {
-                $countFamilles++;
-                foreach($oiseaux as $oiseau) {
-                    $countOiseaux++;
-                }
-            }
-        }
-        return [
-            'countOrdres' => $countOrdres,
-            'countFamilles' => $countFamilles,
-            'countOiseaux' => $countOiseaux,
-            'listeOiseaux' => $listeOiseaux
-        ];
-    }
+//    public function listeOrdresEtFamilles(
+//    ) {
+//        $ordesEtFamilles = Oiseaux::$ordesEtFamilles;
+//        $listeOiseaux = [];
+//        $countOrdres = 0;
+//        $countFamilles = 0;
+//        $countOiseaux = 0;
+//        foreach($ordesEtFamilles as $ordre => $familles) {
+////            dump($ordre);die;
+//            $listeOiseaux['ordre'][$ordre] = $familles;
+//            $countOrdres++;
+//            foreach($familles as $famille => $oiseaux) {
+//                $countFamilles++;
+//                foreach($oiseaux as $oiseau) {
+//                    $countOiseaux++;
+//                }
+//            }
+//        }
+//        return [
+//            'countOrdres' => $countOrdres,
+//            'countFamilles' => $countFamilles,
+//            'countOiseaux' => $countOiseaux,
+//            'listeOiseaux' => $listeOiseaux
+//        ];
+//    }
 
     public function listeOrdresEtFamilles_3(
     ) {
@@ -83,7 +83,6 @@ class OiseauxManipulator
     public function oiseau(
         $string
     ) {
-        $infosOiseau = array();
         $images = array();
         $commentairesImages = array();
         $oiseaux = Oiseaux::$oiseaux;
@@ -128,7 +127,6 @@ class OiseauxManipulator
         return [
             'oiseau' => isset($oiseaux[$string]) ? $oiseaux[$string] : [],
             'images' => $images,
-            'commentaireOiseau' => isset($infosOiseau['commentaire']) ? $infosOiseau['commentaire'] : '',
             'commentairesImages' => $commentairesImages,
             'string' => $string,
             'nextString' => $nextString,

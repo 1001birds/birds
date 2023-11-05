@@ -9,18 +9,22 @@
         #}
         {% if oiseau is not empty %}
             <h4>{{ oiseau.nom }}</h4>
-            <p class="radius5white bottom-100">{{ commentaireOiseau | nl2br }}</p>
+            <p class="radius5white bottom-100">{{ oiseau.commentaire | nl2br }}</p>
 
             <div class="row">
                 {% if images is not empty %}
-                    {% for image in images %}
+                    {% for i, image in images %}
 
                         <div class="col-xs-12 col-sm-6">
-                            <img id="img"
-                                 class="img-fluid responsive radius5white bottom10"
-                                 alt="zer"
-                                 title="zer"
-                                 src="{{ image }}">
+                            <div class="radius5white bottom10">
+                                <img id="img"
+                                     class="img-fluid responsive"
+                                     alt="{{ oiseau.nom }}"
+                                     title="{{ oiseau.nom }}"
+                                     src="{{ image }}">
+                                <br>
+                                {{ commentairesImages[i] is defined ? commentairesImages[i] : '' }}
+                            </div>
                         </div>
                     {% endfor %}
                 {% else %}
