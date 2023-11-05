@@ -218,8 +218,15 @@ class Oiseaux
         'butorEtoile' => [
             'nom' => 'Butor étoilé',
             'lien' => 'pelecaniformes|ardeides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Grand et gros héron, massif, au plumage brun chaud strié de brun plus foncé.
+            Sa tête présente une calotte sombre et un bec en poignard.
+            Une bande noire descend du coin du bec vers la gorge, en passant en dessous de la joue.
+            Le cou est épais, les pattes courtes pour un échassier, mais avec de longs doigts.",
+            'images' =>  [
+                6 => [
+                    'commentaire' => "Jeune"
+                ]
+            ]
         ],
         'bihoreauGris' => [
             'nom' => 'Bihoreau gris',
@@ -236,8 +243,21 @@ class Oiseaux
         'blongiosNain' => [
             'nom' => 'Blongios nain',
             'lien' => 'pelecaniformes|ardeides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Reconnaissable par sa petite taille, équivalente à celle d'un pigeon et à la couleur jaune paille qu'arbore le dessus de sa tête alors que son dos est noir.
+            Longueur : 33 à 38 cm
+            Envergure : 52 à 58 cm
+            Poids : 140 à 150 g",
+            'images' => [
+                3 => [
+                    'commentaire' => "Le plus petit héron d'Europe"
+                ],
+                5 => [
+                    'commentaire' => "Mâle adulte"
+                ],
+                8 => [
+                    'commentaire' => "Femelle adulte"
+                ]
+            ]
         ],
         'spatuleBlanche' => [
             'nom' => 'Spatule blanche',
@@ -260,8 +280,17 @@ class Oiseaux
         'cormoranHuppe' => [
             'nom' => 'Cormoran huppé',
             'lien' => 'suliformes|phalacrocoracides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Cet oiseau, comme son cousin le grand cormoran, a un plumage noir à reflets verts et un bec un peu crochu, allongé, mais son bec est plus fin, son front moins plat et il est doté d'une courte huppe sur la tête.
+            Il présente aussi des dimensions plus modestes : il ne mesure que de 65 à 80 cm de long, a une envergure de 90 à 105 cm et pèse de 1,75 à 2,50 kg
+            Les juvéniles sont bruns, avec le ventre plus clair que le reste du corps, et ont le menton blanc. En vol, ils présentent un triangle blanc sur le bas de leur abdomen.",
+            'images' => [
+                1 => [
+                    'commentaire' => "Adulte à droite, juvénile à gauche"
+                ],
+                4 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'fouDeBassan' => [
             'nom' => 'Fou de Bassan',
@@ -338,14 +367,41 @@ class Oiseaux
         'bargeRousse' => [
             'nom' => 'Barge rousse',
             'lien' => 'charadriiformes|scolopacides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La barge rousse est un oiseau migrateur, multiples détenteur de records de distance de vol sans arrêt.
+            Des vols de 12 à 13 000 kilomètres sans escale durant une dizaine de jours, et à une vitesse pouvant atteindre 90 km/h ont été enregistrés.
+            Cet oiseau possède un bec long et très pointu, des pattes sombres, un plumage du dessus fortement strié.
+            On les reconnaît grâce à leur croupion blanc dessous et barré dessus, ainsi qu'à leur sourcil blanchâtre.
+            Contrairement aux barges à queue noire, les barges rousses n'ont pas de barre alaire blanche.
+            Taille : 41 cm
+            Envergure : 70 à 80 cm
+            Poids : 262 à 630 g
+            Longévité : 18 ans",
+            'images' => [
+                1 => [
+                    'commentaire' => "Jeune Barge rousse dans sa belle robe"
+                ],
+                4 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+            ]
         ],
         'becasseauCocorli' => [
             'nom' => 'Bécasseau cocorli',
             'lien' => 'charadriiformes|scolopacides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "C'est un petit limicole sociable.
+            Au printemps, le Bécasseau cocorli est muni d'un plumage ocre-roux. Il se distingue par son bec noir recourbé comme les courlis, sa calotte grise-brune, ses plumes de couverture souvent tachées de brun-noir et fringées de blanc et ses pattes noires.
+            Son plumage change à l'automne, le dessus devient gris-brun et le dessous blanc.
+            Au vol, le croupion et la barre alaire blancs, de cet oiseau, qui caractérisent cette espèce, se remarquent nettement.
+            Il n'y a pas de dimorphisme sexuel marqué entre les mâles et les femelles, leur plumage étant identique.
+            Taille : 23 cm
+            Envergure : 38 à 41 cm
+            Poids : 44 à 117 g
+            Longévité : 6 ans",
+            'images' => [
+                1 => [
+                    'commentaire' => "Plumage d'automne"
+                ],
+            ]
         ],
         'becasseauVariable' => [
             'nom' => 'Bécasseau variable',
@@ -410,8 +466,28 @@ class Oiseaux
         'pluvierDore' => [
             'nom' => 'Pluvier doré',
             'lien' => 'charadriiformes|charadriides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Pluvier doré est un pluvier de taille moyenne, typiquement charadriidé (corps compact, grosse tête, petit bec et pattes modérées).
+            En plumage nuptial, il a des parties supérieures bariolées de noir, de blanc et de jaune doré ; le dessous, de la face au ventre, est entièrement noir avec une large bordure blanche commençant par un front blanc, se poursuivant par un net sourcil blanc et contournant l'oreille brune.
+            L'oeil est sombre. Le bec et les pattes sont gris noirâtres.
+            En plumage hivernal, la poitrine porte un plastron grisâtre ponctué de jaune doré et de brun rejoignant les flancs marqués de brun.
+            Le ventre est blanc.
+            L'oiseau de première année ressemble beaucoup à l'adulte hivernal, mais avec des franges grises aux tectrices des flancs et du ventre.
+            Sur l'oiseau en vol, on est frappé par le dessous d'aile très clair, et particulièrement par les axillaires blanches qui le distinguent d'autres espèces.
+            Taille : 29 cm
+            Envergure : 67 à 76 cm
+            Poids : 140 à 210 g
+            Longévité : 12 ans",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte plumage de transition"
+                ],
+                1 => [
+                    'commentaire' => "Poussin"
+                ],
+                1 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+            ]
         ],
         'vanneauHuppe' => [
             'nom' => 'Vanneau huppé',
@@ -422,14 +498,33 @@ class Oiseaux
         'goelandMarin' => [
             'nom' => 'Goéland marin',
             'lien' => 'charadriiformes|larides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "C'est le plus grand goéland du monde.
+            Il est reconnaissable à son dos noir, à ses pattes couleur chair et à son bec massif.
+            Il est plus grand que le goéland argenté.
+            Juvénile : Couleur grise.
+            Adulte : grande taille, ailes et dos noir et blanc, pattes couleur chair, bec jaune avec un point rouge.
+            Subadulte, grande taille, contraste marqué entre le dos et le ventre.
+            Taille : 79 cm
+            Envergure : 152 à 167 cm
+            Poids : 1150 à 2150 g
+            Longévité : 20 ans
+            ",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte"
+                ],
+                1 => [
+                    'commentaire' => "Immature"
+                ],]
         ],
         'goelandArgente' => [
             'nom' => 'Goéland argenté',
             'lien' => 'charadriiformes|larides',
             'commentaire' => "",
-            'images' => []
+            'images' => [
+                3 => [
+                    'commentaire' => "Juvénile"
+                ],]
         ],
         'sternePierregarin' => [
             'nom' => 'Sterne pierregarin',
@@ -440,20 +535,82 @@ class Oiseaux
         'sterneCaugek' => [
             'nom' => 'Sterne caugek',
             'lien' => 'charadriiformes|larides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La sterne caugek a un manteau gris cendré.
+            Elle est assez haute sur pattes.
+            Son bec est long et noir, avec le bout jaune.
+            Une huppe érectile prolonge sa calotte noire.
+            La queue blanche, très échancrée, est prolongée par deux longs filets.
+            Ses pattes sont noires.
+            Taille : 46 cm
+            Envergure : 86 à 105 cm
+            Poids : 210 à 260 g
+            Longévité : 24 ans",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte plumage internuptial"
+                ],
+                1 => [
+                    'commentaire' => "Adulte plumage internuptial"
+                ],
+                2 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+                3 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+                4 => [
+                    'commentaire' => "Adulte"
+                ],
+                5 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'mouetteRieuse' => [
             'nom' => 'Mouette rieuse',
             'lien' => 'charadriiformes|larides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La Mouette rieuse est un laridé de taille moyenne, élancé et élégant.
+            L'adulte en plumage nuptial se reconnaît à son capuchon brun noir, paraissant noir de loin. Bec et pattes sont rouge sombre.
+            L'adulte en plumage d'hiver a perdu son capuchon dont il ne reste que des traces, deux taches sombres devant l'oeil, deux autres sur les oreilles en arrière des yeux, une vague bande sombre matérialisant l'arrière de la calotte et souvent une autre bande entre les yeux.
+            Malgré cela, la tête paraît blanche à distance. Bec et pattes sont d'un rouge plus vif.",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+            ]
         ],
         'labbePomarin' => [
             'nom' => 'Labbe pomarin',
             'lien' => 'charadriiformes|stercorarides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "C'est une espèce agressive qui tue et dévore d'autres oiseaux marins et qui peut s'attaquer à l'homme si son nid est menacé.
+            En phase pâle, il a un dessus brun, un dessous blanc avec une large bande pectorale brune nuancée de chamois, accentuant la forme massive de l'avant du corps.
+            Dans cette phase, la calotte noire est nette et facilement identifiable.
+            Les joues et parfois la gorge sont teintées de jaune.
+            La femelle présente des flancs et un bas-ventre typiquement foncés ou fortement marbrés.
+            En phase sombre, le corps est entièrement brun, la gorge et les côtés du cou étant plus uniformément sombres que chez le labbe parasite.
+            La phase intermédiaire est extrêmement rare.
+            Taille : 51 cm
+            Envergure : 125 à 138 cm
+            Poids : 550 à 900 g
+            Longévité : 15 ans
+            ",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+                1 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+                2 => [
+                    'commentaire' => "Adulte"
+                ],
+                4 => [
+                    'commentaire' => "Comparer avec Grand Labbé pour voir"
+                ],
+                5 => [
+                    'commentaire' => "A voir aussi"
+                ],
+            ]
         ],
         'grandLabbe' => [
             'nom' => 'Grand Labbe',
