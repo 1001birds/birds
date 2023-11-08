@@ -3,12 +3,12 @@
 {% block content %}
     <div class="container-fluid mt-1 p-3">
 
-        <h2 class="text-muted">Fiche Oiseau</h2>
+        <h5 class="text-muted">Fiche Oiseau</h5>
         {#
         SI ON A BIEN UN OISEAU
         #}
         {% if oiseau is not empty %}
-            <h4>{{ oiseau.nom }}</h4>
+            <h1>{{ oiseau.nom }}</h1>
             <p class="radius5white bottom-100">{{ oiseau.commentaire | nl2br }}</p>
 
             <div class="row">

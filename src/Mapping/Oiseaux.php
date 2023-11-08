@@ -645,32 +645,90 @@ class Oiseaux
         'epervierDEurope' => [
             'nom' => "Epervier d'Europe",
             'lien' => 'accipitriformes|anatides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "L'Épervier d'Europe est un petit Accipiter, approximativement de la taille d'un pigeon.
+            Ailes larges, courtes et arrondies à l'extrémité et une longue queue, l'oeil jaune, les parties inférieures finement barrées chez les adultes.
+            Il a un cousin, l'Autour des palombes, qui est nettement plus grand et plus fort. Quand on ne peut apprécier la taille, la confusion est possible.
+            Chez l'épervier, il y a un dimorphisme sexuel.
+            Le mâle adulte est typique avec ses parties supérieures gris-ardoise et la teinte rousse des joues, des flancs et des barres des parties inférieures. L'iris est orange.
+            La femelle adulte, visiblement plus grande, est brune à gris-brun dessus et barrée de brun dessous. L'iris est jaune et elle a le plus souvent un sourcil pâle. C'est elle qui peut prêter à confusion avec l'autour.
+            Taille : 38 cm
+            Envergure : 60 à 75 cm
+            Poids : 185 à 350 g
+            Longévité : 16 ans",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte"
+                ],
+                1 => [
+                    'commentaire' => "Subadulte"
+                ],
+            ]
         ],
         'percnoptereDEgypte' => [
             'nom' => "Percnoptère d'Egypte",
             'lien' => 'accipitriformes|anatides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Anciennement appelé Vautour percnoptère, le Percnoptère d'Égypte est un petit vautour dont les couleurs dominantes sont le noir et le blanc à l'âge adulte.
+            Mâle et femelle sont semblables.
+            Le juvénile est très différent d'aspect. Son plumage est brun-chocolat. Le devant de sa tête est très pâle, blanchâtre et ses pattes sont rose clair.
+            Taille : 70 cm
+            Envergure : 146 à 175 cm
+            Poids : 1600 à 2200 g
+            Longévité : 37 ans",
+            'images' => [
+                3 => [
+                    'commentaire' => "Jeune"
+                ],
+                5 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+            ]
         ],
         'vautourFauve' => [
             'nom' => 'Vautour fauve',
             'lien' => 'accipitriformes|anatides',
-            'commentaire' => "",
+            'commentaire' => "Son crâne recouvert d'un duvet blanc est prolongé par un cou étroit et long d'où émerge une collerette de plumes hérissées blanches et duveteuses.
+            Le bec puissant de couleur corne est pâle, les yeux jaunes.
+            L'ensemble de la poitrine et du ventre fauve contraste harmonieusement avec le dos et le croupion chamois-brun.
+            Taille : 110 cm
+            Envergure : 240 à 280 cm
+            Poids : 8000 à 11000 g",
             'images' => []
         ],
         'gypaeteBarbu' => [
             'nom' => 'Gypaète barbu',
             'lien' => 'accipitriformes|anatides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le gypaète barbu est le plus grand vautour de la faune européenne.
+            Les deux sexes sont semblables, avec la femelle plus grande que le mâle.
+            Le gypaète barbu tient son nom des 'mèches' de plumes naissant à la base des mandibules, et d'autres qui partent des joues.
+            Les yeux sont jaunes, entourés d'un cercle oculaire d'un rouge intense.
+            Tête couleur crème. Un masque noir entoure ses yeux, et les deux parties du masque se rejoignent sur le haut de la tête.
+            Taille : 115 cm
+            Envergure : 250 à 282 cm
+            Poids : 5000 à 7000 g
+            Longévité : 40 ans",
+            'images' => [
+                4 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'circaeteJeanLeBlanc' => [
             'nom' => 'Circaète Jean-le-Blanc',
             'lien' => 'accipitriformes|anatides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Sa taille, sa silhouette, son allure générale le font confondre par les débutants avec une Buse variable ou une Bondrée apivore.
+            Son plumage est brun uniforme par dessus contrastant avec les parties inférieures qui sont blanches et délicatement mouchetées de brun.
+            Sa tête large et plus sombre apparaît comme disproportionnée par rapport au reste du corps.
+            Son envergure importante lui confère une silhouette massive en vol, reconnaissable entre toutes.
+            La femelle est un peu plus grande que le mâle.
+            Taille : 70 cm
+            Envergure : 166 à 188 cm
+            Poids : 1200 à 2300 g
+            Longévité : 17 ans",
+            'images' => [
+                8 => [
+                    'commentaire' => "Immature"
+                ],
+            ]
         ],
         'pygargueAQueueBlanche' => [
             'nom' => 'Pygargue à queue blanche',
@@ -693,19 +751,53 @@ class Oiseaux
         'chouetteHulotte' => [
             'nom' => 'Chouette hulotte',
             'lien' => 'strigiformes|strigides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La Chouette hulotte est une chouette de taille moyenne inféodée aux milieux forestiers du paléarctique occidental.
+            L'espèce présente deux morphes de plumage, un gris et un roux, comme beaucoup d'autres rapaces nocturnes.
+            L'adulte de morphe gris a un plumage brun-gris marqué de taches brun sombre et claires qui rompent la continuité et le rendent très cryptique.
+            Chez le morphe roux, le brun-gris froid du plumage est remplacé par un brun-roux chaud, parfois très vif, du plus bel effet.
+            Taille : 39 cm
+            Envergure : 94 à 104 cm
+            Poids : 420 à 590 g
+            Longévité : 18 ans
+            ",
+            'images' => [
+                2 => [
+                    'commentaire' => "Jeune"
+                ],
+            ]
         ],
         'hibouMoyenDuc' => [
             'nom' => 'Hibou moyen-duc',
             'lien' => 'strigiformes|strigides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Hibou moyen-duc est un hibou de taille moyenne.
+            La face est remarquable. Le disque facial roux d'aspect arrondi est bordé sur les côtés de noir et de blanc.
+            Au-dessus du disque facial se dressent deux longues touffes de plumes noires, avec un peu de blanc et de roux, qui forment comme des 'oreilles' ou des 'cornes'.
+            Taille : 35 à 40 cm
+            Envergure : 90 à 100 cm
+            Poids : 260 à 435 g
+            Longévité : 27 ans",
+            'images' => [
+                3 => [
+                    'commentaire' => "Juvénile"
+                ],
+                4 => [
+                    'commentaire' => "1° année"
+                ],
+            ]
         ],
         'hibouDesMarais' => [
             'nom' => 'Hibou des marais',
             'lien' => 'strigiformes|strigides',
-            'commentaire' => "",
+            'commentaire' => "Le hibou des marais est un rapace diurne et nocturne de taille moyenne.
+            Son plumage est brun chamoisé avec des stries noires sur la poitrine, l'abdomen et l'arrière.
+            Les mâles sont plus clairs que les femelles.
+            Les yeux jaunes cerclés de noir sont placés au cœur de deux disques faciaux blanchâtres ou blanc chamoisé, eux-mêmes teintés de brun.
+            Le bec est noir.
+            La tête apparaît ronde sans touffes aux oreilles où l'on distingue juste une petite zone huppée.
+            Taille : 37 à 38 cm
+            Envergure : 90 à 105 cm
+            Poids : 290 à 350 g
+            Longévité : 28 ans",
             'images' => []
         ],
         'petitDucScops' => [
