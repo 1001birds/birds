@@ -9,11 +9,17 @@
             <div class="col-xs-12 col-sm-6"
             data-image="{{ image }}">
                 {% if image is defined %}
-                    <img id="img"
-                         class="img-fluid responsive radius5white"
-                         alt="zer"
-                         title="zer"
-                         src="{{ '/build/images/oiseaux/'~image }}">
+                    <div class="radius5white">
+                        <img id="img"
+                             class="img-fluid responsive"
+                             alt="zer"
+                             title="zer"
+                             src="{{ '/build/images/oiseaux/'~image }}">
+                        {% if commentaireImage != '' %}
+                            <br>
+                            {{ commentaireImage }}
+                        {% endif %}
+                    </div>
                 {% else %}
                     Il y a un problème pour <span class="text-danger">{{ erreur }}</span>
                 {% endif %}
@@ -22,7 +28,7 @@
             </div>
             {#
             BOUTONS
-            SI IMAGHE EXISTE
+            SI IMAGE EXISTE
             #}
             <div class="col-xs-2 col-sm-1 top5">
                 {% if image is defined %}
@@ -58,6 +64,14 @@
 {#                        <span class="text-muted small">{{ espece }}</span>#}
                     </div>
                 {% endif %}
+            </div>
+            <div class="col-xs-12">
+                <button id="more"
+                        title="en savoir plus"
+                        data-string="{{ string }}"
+                        class="btn btn-default pull-right">
+                    en savoir plus
+                </button>
             </div>
     </div>
 {% endblock %}

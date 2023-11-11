@@ -83,17 +83,9 @@ class OiseauxController extends AbstractController
     public function apprendre(
         Request $request
     ) {
-
-//        dump($this->oiseauxManipulator->apprendre());die;
-
-
-//        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
-//        dump($listeOiseaux);
-//        die;
         return $this->render('apprendre.html.twig',
             $this->oiseauxManipulator->apprendre()
         );
-
     }
 
     /**

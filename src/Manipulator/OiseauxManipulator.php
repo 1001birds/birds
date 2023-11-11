@@ -227,6 +227,9 @@ class OiseauxManipulator
 
         $arrayImage = explode('_', $imageDUnOiseauAuHasard);
         $stringOiseau = $arrayImage[0];
+        $arrayImageExt = explode('.', $arrayImage[1]);
+        $numeroImage = $arrayImageExt[0];
+//        dump($numeroImage);die;
         /*
          * SI CET OISEAU EXISTE
          * */
@@ -235,6 +238,7 @@ class OiseauxManipulator
             $stringOrdre = $partsLien[0];
             $stringFamille = $partsLien[1];
             $ordesEtFamilles = OrdreEtFamilles::$ordresEtFamilles;
+//            dump($ordesEtFamilles);die;
             $ordre = '';
             $famille = '';
             $espece = '';
@@ -247,12 +251,26 @@ class OiseauxManipulator
                     }
                 }
             }
+            /*
+             * COMMENTAIRE IMAGE
+             * */
+            $commentaireImage = '';
+            if(isset($oiseaux[$stringOiseau]['images'][$numeroImage])) {
+                $infosImage = $oiseaux[$stringOiseau]['images'][$numeroImage];
+                if(isset($infosImage)) {
+                    if(isset($infosImage['commentaire'])) {
+                        $commentaireImage = $infosImage['commentaire'];
+                    }
+                }
+            }
             return [
                 'image' => $imageDUnOiseauAuHasard,
+                'commentaireImage' => $commentaireImage,
                 'nom' => $oiseaux[$stringOiseau]['nom'],
                 'ordre' => $ordre,
                 'famille' => $famille,
-                'espece' => $espece
+                'espece' => $espece,
+                'string' => $stringOiseau
             ];
         }
         return [

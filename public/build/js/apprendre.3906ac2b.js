@@ -1,1 +1,0 @@
-$(document).ready((function(){$(document).on("click","#next",(function(o){console.log("reload"),location.reload()})),$(document).on("click","#seeName",(function(o){console.log("seeName"),$("#name").removeClass("d-none")}))}));

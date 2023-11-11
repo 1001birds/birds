@@ -11,40 +11,14 @@ $(document).ready(function() {
         $('#name').removeClass('d-none')
     });
 
-    // $(document).on('click', '#apprendre', function (e) {
-    //     e.preventDefault();
-    //     console.log('apprendre')
-    //             /*
-    //              * POST
-    //              * */
-    //             // setLoader();
-    //             $.post(Routing.generate('apprendre'),
-    //                 {},
-    //                 function(response) {
-    //                 console.log('response ok')
-    //                 // removeLoader();
-    //             });
-    // });
-
-    // /*
-    // * POST
-    // * */
-    // setLoader();
-    // $.post(Routing.generate('montreUnOiseau'), {
-    //     idCDC:idCDCToValidate
-    // }, function(response) {
-    //     $('#infosCheckGenre').addClass('d-none');
-    //     $('#checkGenreCode').html(response);
-    //     $('#modalValideAndConfirmCDC').modal('show');
-    //     removeLoader();
-    // });
-
-
-
-
-
-
-
-
-
+    $(document).on('click', '#more', function (e) {
+        console.log('more')
+        var string = $(this).attr('data-string');
+        var url = '/oiseau?string=' + string
+        /*
+        * REDIRECT
+        * */
+        try { window.location.replace(url); }
+        catch(e) { window.location = url; }
+    });
 });

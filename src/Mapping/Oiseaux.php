@@ -243,14 +243,12 @@ class Oiseaux
         'blongiosNain' => [
             'nom' => 'Blongios nain',
             'lien' => 'pelecaniformes|ardeides',
-            'commentaire' => "Reconnaissable par sa petite taille, équivalente à celle d'un pigeon et à la couleur jaune paille qu'arbore le dessus de sa tête alors que son dos est noir.
+            'commentaire' => "Le plus petit héron d'Europe.
+            Reconnaissable par sa petite taille, équivalente à celle d'un pigeon et à la couleur jaune paille qu'arbore le dessus de sa tête alors que son dos est noir.
             Longueur : 33 à 38 cm
             Envergure : 52 à 58 cm
             Poids : 140 à 150 g",
             'images' => [
-                3 => [
-                    'commentaire' => "Le plus petit héron d'Europe"
-                ],
                 5 => [
                     'commentaire' => "Mâle adulte"
                 ],
@@ -803,13 +801,27 @@ class Oiseaux
         'petitDucScops' => [
             'nom' => 'Petit-duc scops',
             'lien' => 'strigiformes|strigides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le petit-duc scops est un des plus petits rapaces nocturnes, comme le dit son nom. 
+            Hibou à peine aussi gros qu'un merle qui tient facilement dans la main.
+            Ses aigrettes de petites tailles ne sont pas toujours visibles.
+            Son disque facial gris séparé en deux par une bande sombre triangulaire de la calotte au bec, fait ressortir ses yeux ronds jaune-vert qui lui donnent un regard farouche. 
+            Le bec est noir bleuté.
+            Les pattes sont brun-gris à brun-roux, suivant les variations du plumage qui est rayé de façon dense, mais de couleur pouvant varier du brun au roux et au gris.
+            Taille : 20 cm
+            Envergure : 53 à 64 cm
+            Poids : 90 à 95 g
+            Longévité : 6 ans",
+            'images' => [
+                2 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'grandDucDEurope' => [
             'nom' => "Grand-duc d'Europe",
             'lien' => 'strigiformes|strigides',
-            'commentaire' => "",
+            'commentaire' => "Le Grand-duc d'Europe est l'oiseau de proie nocturne le plus grand.
+            ",
             'images' => []
         ],
         'chouetteDeTengmalm' => [
