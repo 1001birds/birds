@@ -699,11 +699,11 @@ class OrdreEtFamilles
                         ],
                         'picEpeiche' => [
                             'nom' => 'Pic épeiche',
-                            'espece' => ''
+                            'espece' => 'Dendrocopos major'
                         ],
                         'picVert' => [
                             'nom' => 'Pic vert',
-                            'espece' => ''
+                            'espece' => 'Picus viridis'
                         ]
                     ]
                 ]
@@ -735,11 +735,11 @@ class OrdreEtFamilles
                     'oiseaux' => [
                         'pinsonDesArbres' => [
                             'nom' => 'Pinson des arbres',
-                            'espece' => ''
+                            'espece' => 'Fringilla coelebs'
                         ],
                         'bouvreuilPivoine' => [
                             'nom' => 'Bouvreuil pivoine',
-                            'espece' => ''
+                            'espece' => 'Pyrrhula pyrrhula'
                         ],
                         'grosBecCasseNoyaux' => [
                             'nom' => 'Gros-bec casse-noyaux',
@@ -747,7 +747,7 @@ class OrdreEtFamilles
                         ],
                         'verdierDEurope' => [
                             'nom' => "Verdier d'Europe",
-                            'espece' => ''
+                            'espece' => 'Chloris chloris'
                         ]
                     ]
                 ],

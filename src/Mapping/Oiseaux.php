@@ -827,7 +827,14 @@ class Oiseaux
         'chouetteDeTengmalm' => [
             'nom' => 'Chouette de tengmalm',
             'lien' => 'strigiformes|strigides',
-            'commentaire' => "",
+            'commentaire' => "La chouette de Tengmalm, parfois nommée Nyctale de Tengmalm est un petit strigidé à grande tête.
+            La calotte brun foncé est marquée d'une multitude de petites taches d'intensité variable et soulignée par un V blanc placé entre les yeux.
+            Les disques faciaux sont blancs.
+            Les iris jaunes cerclés de noir lui donnent une expression étonnée très caractéristique.
+            Taille : 21 à 28 cm
+            Envergure : 52 à 58 cm
+            Poids : 120 à 210 g
+            Longévité : 8 ans",
             'images' => []
         ],
         'effraieDesClochers' => [
@@ -875,14 +882,46 @@ class Oiseaux
         'picEpeiche' => [
             'nom' => 'Pic épeiche',
             'lien' => 'piciformes|picides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Pic épeiche est le plus commun et le plus répandu des pics dits bigarrés, au plumage coloré de noir, blanc et rouge.
+            Le dimorphisme sexuel est faible. Le mâle adulte se distingue à sa zone occipitale rouge cramoisi alors qu'elle est noire chez la femelle.
+            Taille : 24 cm
+            Envergure : 34 à 39 cm
+            Poids : 70 à 98 g
+            Longévité : 11 ans",
+            'images' => [
+                0 => [
+                    'commentaire' => "Femelle"
+                ],
+                1 => [
+                    'commentaire' => "Mâle"
+                ],
+                2 => [
+                    'commentaire' => "Juvénile"
+                ],
+                3 => [
+                    'commentaire' => "Mâle à gauche nourissant son juvénile"
+                ],
+                4 => [
+                    'commentaire' => "Femelle à gauche, mâle à droite"
+                ],
+            ]
         ],
         'picVert' => [
             'nom' => 'Pic vert',
             'lien' => 'piciformes|picides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Pic vert est un pic d'assez grande taille, au plumage à dominante verte qui lui a donné son nom.
+            C'est ce qu'on remarque en premier quand on est confronté à cette espèce. 
+            Ensuite, c'est le rouge vif de la tête qui saute aux yeux.
+            Le juvénile se distingue tout de suite de l'adulte. Il est beaucoup plus sombre, moins vert, et la quasi-totalité de son plumage est marqué de stries, barres et mouchetures.
+            C'est un oiseau qui vit en solitaire en période inter-nuptiale, en couples territoriaux en saison de reproduction et en petits groupes familiaux au moment de l'émancipation des jeunes.",
+            'images' => [
+                3 => [
+                    'commentaire' => "Plumage nuptiale"
+                ],
+                4 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'fauconPelerin' => [
             'nom' => 'Faucon pèlerin',
@@ -899,8 +938,20 @@ class Oiseaux
         'pinsonDesArbres' => [
             'nom' => 'Pinson des arbres',
             'lien' => 'passeriformes|fringillides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Pinson des arbres est un passereau commun et facile à reconnaître.
+Le mâle adulte nuptial est assez bariolé.
+Le manteau et le haut du dos sont d'un brun-marron chaud.
+La femelle a un plumage beaucoup plus discret. Le manteau est d'un brun terne.
+Le juvénile est encore plus terne que la femelle. Heureusement, le blanc des ailes et de la queue permet de le reconnaître.
+Taille : 14 à 16 cm
+Envergure : 26 cm
+Poids : 17 à 30 g
+Longévité : 14 ans",
+            'images' => [
+                6 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'bouvreuilPivoine' => [
             'nom' => 'Bouvreuil pivoine',
