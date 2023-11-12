@@ -1081,20 +1081,59 @@ Longévité : 15 ans",
         'accenteurMouchet' => [
             'nom' => 'Accenteur mouchet',
             'lien' => 'passeriformes|prunellides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "L'Accenteur mouchet a la taille du Rougegorge familier, mais pas son allure.
+            Il évoque un moineau par son manteau brun chaud marqué de noir, d'où une possible confusion, mais il s'en distingue immédiatement par la finesse de son bec.
+            Chez l'adulte, un gris de cendre envahit la tête et la poitrine, et les flancs présentent des flammèches brun-roux.",
+            'images' => [
+                0 => [
+                    'commentaire' => "Adulte"
+                ],
+                1 => [
+                    'commentaire' => "Juvénile"
+                ],
+                2 => [
+                    'commentaire' => "Adulte plumage nuptiale"
+                ],
+                3 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'troglodyteMignon' => [
             'nom' => 'Troglodyte mignon',
             'lien' => 'passeriformes|troglodytides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Troglodyte mignon est un des plus petits passereaux du vieux continent.
+            Il mesure moins de 10 cm de longueur et ne pèse que 8 g environ.
+            Sa silhouette est très typique.
+            Le corps rondelet porte une tête massive prolongée par un long bec fin et légèrement courbe.
+            Une très courte queue (3,5 cm) est le plus souvent tenue relevée.
+            Taille : 10 cm
+Envergure : 13 à 17 cm
+Poids : 8 à 13 g
+Longévité : 6 ans",
+            'images' => [
+                4 => [
+                    'commentaire' => "Oisillon"
+                ],
+                5 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'rougegorgeFamilier' => [
             'nom' => 'Rougegorge familier',
             'lien' => 'passeriformes|muscicapides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Rougegorge familier se présente comme un petit oiseau rondelet, avec des ailes relativement courtes atteignant péniblement le milieu de la queue.
+            L'adulte est aisément reconnaissable à la couleur orangée qui envahit tout le devant du corps, front, lores, côtés de la tête, cou et poitrine.
+            Taille : 14 cm
+Envergure : 20 à 22 cm
+Poids : 16 à 22 g
+Longévité : 15 ans",
+            'images' => [
+                2 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'hirondelleDeFenetre' => [
             'nom' => 'Hirondelle de fenêtre',
@@ -1111,14 +1150,41 @@ Longévité : 15 ans",
         'choucasDesTours' => [
             'nom' => 'Choucas des tours',
             'lien' => 'passeriformes|corvides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Choucas des tours est le plus petit de nos corvidés 'noirs' indigènes.
+            Il accompagne souvent le Corbeau freux et la différence de taille est flagrante.
+            Taille : 39 cm
+Envergure : 64 à 73 cm
+Poids : 220 à 270 g
+Longévité : 14 ans",
+            'images' => [
+                1 => [
+                    'commentaire' => "Adulte plumage nuptiale"
+                ],
+                2 => [
+                    'commentaire' => "Adulte plumage de transition"
+                ],
+            ]
         ],
         'geaiDesChenes' => [
             'nom' => 'Geai des chênes',
             'lien' => 'passeriformes|corvides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Geai des chênes a un plumage coloré qui attire l'attention.
+            Il n'y a pas de dimorphisme sexuel et tous les plumages se ressemblent.
+             Taille : 36 cm
+Envergure : -
+Poids : 140 à 190 g
+Longévité : 18 ans",
+            'images' => [
+                1 => [
+                    'commentaire' => "Oisillon"
+                ],
+                2 => [
+                    'commentaire' => "Juvénile"
+                ],
+                4 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         /*
          * Y SONT PAS
