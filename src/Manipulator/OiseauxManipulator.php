@@ -198,7 +198,9 @@ class OiseauxManipulator
 
     public function quizzUnOiseau(
     ) {
-        $jourdui = 'j'.(new \DateTime())->format('Ymd');
+
+        $heure = (new \DateTime())->format('H');
+        $jourdui = 'j'.(new \DateTime())->format('Ymd').'_'.((int)$heure < 14 ? 'am' : 'pm');
         return Quizz::$$jourdui;
     }
 
