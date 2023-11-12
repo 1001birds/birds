@@ -956,8 +956,29 @@ Longévité : 14 ans",
         'bouvreuilPivoine' => [
             'nom' => 'Bouvreuil pivoine',
             'lien' => 'passeriformes|fringillides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Bouvreuil pivoine est un passereau de la taille d'un moineau, mais plus trapu.
+            Le mâle adulte de la sous-espèce 'europaea' est vivement coloré. Il a le manteau, le dos et les couvertures alaires petites et moyennes gris clair.
+            Le croupion est blanc, contrastant avec les sus-caudales et la queue noir brillant.
+            Les grandes couvertures et les rémiges sont noir brillant à reflets bleus.
+Les grandes couvertures noires sont largement terminées de blanc grisâtre, ce qui crée une barre bien visible.
+Taille : 16 cm
+Envergure : 28 cm
+Poids : 26 à 38 g
+Longévité : 17 ans",
+            'images' => [
+                0 => [
+                    'commentaire' => "Parade nuptiale"
+                ],
+                1 => [
+                    'commentaire' => "Femelle"
+                ],
+                2 => [
+                    'commentaire' => "Mâle"
+                ],
+                3 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'grosBecCasseNoyaux' => [
             'nom' => 'Gros-Bec Casse-Noyaux',
@@ -968,14 +989,39 @@ Longévité : 14 ans",
         'verdierDEurope' => [
             'nom' => "Verdier d'Europe",
             'lien' => 'passeriformes|fringillides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Verdier d'Europe est un passereau trapu de la taille du Moineau domestique.
+            Le mâle adulte apparaît globalement jaune-vert-olive.
+            Ce qui permet de le reconnaître tout de suite, au posé comme en vol, c'est le jaune vif des ailes et de la queue.
+            La femelle adulte est morphologiquement semblable au mâle, mais nettement différente quant au plumage, beaucoup plus terne.
+            Taille : 16 cm
+            Poids : 25 à 34 g
+            Longévité : 13 ans",
+            'images' => [
+                2 => [
+                    'commentaire' => "Oisillon"
+                ],
+                3 => [
+                    'commentaire' => "Juvénile"
+                ],
+                5 => [
+                    'commentaire' => "Mâle à gauche, femelle à droite"
+                ],
+            ]
         ],
         'griveMusicienne' => [
             'nom' => 'Grive musicienne',
             'lien' => 'passeriformes|turdides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La Grive musicienne est d'une taille un peu inférieure à celle du Merle noir qu'elle côtoie souvent, mais la confusion n'est pas possible.
+            C'est un oiseau plus trapu, avec une queue plus courte et un plumage plus clair.
+            Taille : 23 cm
+Envergure : 33 à 36 cm
+Poids : 65 à 90 g
+Longévité : 14 ans",
+            'images' => [
+                4 => [
+                    'commentaire' => "Poussin"
+                ],
+            ]
         ],
         'merleNoir' => [
             'nom' => 'Merle noir',
@@ -986,14 +1032,45 @@ Longévité : 14 ans",
         'mesangeBleue' => [
             'nom' => 'Mésange bleue',
             'lien' => 'passeriformes|parides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La Mésange bleue est une petite mésange qui tire son nom de la couleur bleue de sa calotte, de ses ailes et de sa queue.
+            Le manteau est jaune-vert.
+            Un trait blanc se voit sur l'aile au niveau des grandes couvertures.
+            Le juvénile est plus terne que l'adulte. La calotte est grisâtre, le manteau moins vert.
+            Taille : 12 cm
+Envergure : 12 à 14 cm
+Poids : 9 à 12 g
+Longévité : 15 ans",
+            'images' => [
+                1 => [
+                    'commentaire' => "Adulte vue de face"
+                ],
+                2 => [
+                    'commentaire' => "Oisillon"
+                ],
+                3 => [
+                    'commentaire' => "Juvénile"
+                ],
+            ]
         ],
         'mesangeCharbonniere' => [
             'nom' => 'Mésange charbonnière',
             'lien' => 'passeriformes|parides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "La Mésange charbonnière est une grande mésange, la plus grande de celles auxquelles nous sommes confrontés dans l'ouest du continent.
+            Elle est remarquable par sa tête noire à larges joues blanches.
+            L'oeil très sombre est noyé dans ce noir.
+            Le juvénile a des couleurs plus ternes que celles de l'adulte.
+            Taille : 14 cm
+Envergure : 23 à 26 cm
+Poids : 16 à 21 g
+Longévité : 15 ans",
+            'images' => [
+                2 => [
+                    'commentaire' => "Juvénile"
+                ],
+                3 => [
+                    'commentaire' => "Oisillon"
+                ],
+            ]
         ],
         'moineauDomestique' => [
             'nom' => 'Moineau domestique',
