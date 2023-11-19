@@ -20,7 +20,14 @@ class Oiseaux
         'canardSiffleur' => [
             'nom' => 'Canard siffleur',
             'lien' => 'anseriformes|anatides',
-            'commentaire' => "",
+            'commentaire' => "Le mâle a le corps gris, la poitrine rosée et le croupion noir.
+La tête brune avec une bande jaune sur le front et un bec gris clair et noir.
+La femelle est brune avec un bec gris clair et noir.
+Taille : 51 cm
+Envergure : 75 à 86 cm
+Poids : 500 à 900 g
+Longévité : 18 ans
+",
             'images' => []
         ],
         'canardSouchet' => [
@@ -38,26 +45,65 @@ class Oiseaux
         'sarcelleDHiver' => [
             'nom' => "Sarcelle d'Hiver",
             'lien' => 'anseriformes|anatides',
-            'commentaire' => "",
+            'commentaire' => "La Sarcelle d'hiver est le plus petit canard de surface du paléarctique.
+            Malgré sa petite taille, c'est un oiseau fin et élancé.
+            Le dimorphisme sexuel est particulièrement marqué chez les adultes nuptiaux.",
             'images' => []
         ],
         'tadorneDeBellon' => [
             'nom' => 'Tadorne de Bellon',
             'lien' => 'anseriformes|anatides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le plus grand des canards de surface en France.
+            Le mâle et la femelle sont sensiblement identiques.
+            La tête et le haut du cou sont verts, le reste du cou blanc.
+            Le bec est rouge, avec une aspérité à la base chez les mâles.
+            Taille : 67 cm
+Envergure : 110 à 133 cm
+Poids : 562 à 1400 g
+Longévité : 16 ans",
+            'images' => [
+                3 => [
+                    'commentaire' => "Femelle juvénile"
+                ],
+                4 => [
+                    'commentaire' => "Femelle adulte"
+                ],
+                6 => [
+                    'commentaire' => "Juvénile"
+                ],
+                7 => [
+                    'commentaire' => "Poussin"
+                ],
+            ]
         ],
         'canardChipeau' => [
             'nom' => 'Canard chipeau',
             'lien' => 'anseriformes|anatides',
-            'commentaire' => "",
+            'commentaire' => "Le canard chipeau est un canard de surface aux couleurs ternes : le mâle est gris avec un croupion noir et le ventre blanc.
+            Il a un miroir alaire blanc bordé de noir et de roux que l'on peut observer aussi bien en vol qu'au repos.
+            Le bec est gris.
+            La femelle est difficile à distinguer de celle du colvert.
+            Taille : 58 cm
+Envergure : 84 à 95 cm
+Poids : 550 à 900 g
+Longévité : 13 ans",
             'images' => []
         ],
         'eiderADuvet' => [
             'nom' => 'Eider à duvet',
             'lien' => 'anseriformes|anatides',
             'commentaire' => "",
-            'images' => []
+            'images' => [
+                1 => [
+                    'commentaire' => "Femelle au nid"
+                ],
+                2 => [
+                    'commentaire' => "Mâle"
+                ],
+                5 => [
+                    'commentaire' => "Adulte internuptial"
+                ],
+            ]
         ],
         'harleHuppe'=> [
             'nom' => 'Harle huppé',
@@ -110,8 +156,17 @@ class Oiseaux
         'grandTetras' => [
             'nom' => 'Grand tétras',
             'lien' => 'galliformes |phasianides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "Le Grand tétras, appelé aussi Coq de bruyère, se caractérise par un bec fort et par une caroncule rouge vif (excroissance charnue comme celle qui pend à la base du bec des dindons), très visible au-dessus de l'oeil.
+            Son dos est noir, ses ailes brunes avec une tache blanche, le poitrail d'un vert bleu brillant.
+            Il s'agit du plus gros des Galliformes d'Europe.
+Taille : 74 à 90 cm
+Envergure : jusqu’à 125 cm
+Poids : 3,5 à 4,1 kg, plus rarement jusqu’à 5 kg.",
+            'images' => [
+                2 => [
+                    'commentaire' => "Femelle"
+                ]
+            ]
         ],
         'pigeonRamier' => [
             'nom' => 'Pigeon ramier',
@@ -134,8 +189,28 @@ class Oiseaux
         'grebeCastagneux' => [
             'nom' => 'Grèbe castagneux',
             'lien' => 'podicipediformes|podicipedides',
-            'commentaire' => "",
-            'images' => []
+            'commentaire' => "C'est le plus petit de nos grèbes européens.
+            C'est un oiseau exclusivement aquatique d'apparence compacte et trapue.
+            Son cou souvent rentré dans les plumes est surmonté d'une petite tête ronde.
+            Son plumage est généralement brun sombre sur le dessus, tandis que les flancs peuvent présenter des touches de châtain et de fauve plus ou moins clair, avec des variations saisonnières.
+            Taille : 29 cm
+Envergure : 40 à 45 cm
+Poids : 130 à 240 g
+Longévité : 17 ans",
+            'images' => [
+                1 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+                2 => [
+                    'commentaire' => "Adulte plumage internuptial"
+                ],
+                3 => [
+                    'commentaire' => "Adulte plumage internuptial"
+                ],
+                6 => [
+                    'commentaire' => "Juvénile"
+                ]
+            ]
         ],
         'grebeHuppe' => [
             'nom' => 'Grèbe huppé',
@@ -239,6 +314,32 @@ class Oiseaux
             'lien' => 'pelecaniformes|ardeides',
             'commentaire' => "",
             'images' => []
+        ],
+        'heronCendre' => [
+            'nom' => 'Héron cendré',
+            'lien' => 'pelecaniformes|ardeides',
+            'commentaire' => "Le Héron cendré est un échassier qui mesure 90 cm à 1 m.
+            Son bec en forme de poignard témoigne d'un régime principalement piscivore.
+            Ce bec est de couleur jaunâtre à l'âge adulte et sa couleur s'intensifie en période nuptiale.
+            Son front et le dessus de sa tête sont blancs entourés de deux bandes latérales noires qui se rejoignent en huppe au niveau de sa nuque.
+            Les parties inférieures de son corps sont blanchâtres avec deux lignées de raies noires se dessinant sur son long cou.
+            Les côtés de sa poitrine et de son ventre sont noirs.
+            Taille : 98 cm
+Envergure : 175 à 195 cm
+Poids : 600 à 1200 g
+Longévité : 25 ans
+",
+            'images' => [
+                2 => [
+                    'commentaire' => "Immature"
+                ],
+                3 => [
+                    'commentaire' => "Adulte plumage nuptial"
+                ],
+                4 => [
+                    'commentaire' => "Immature"
+                ],
+            ]
         ],
         'blongiosNain' => [
             'nom' => 'Blongios nain',
@@ -1135,14 +1236,14 @@ Longévité : 15 ans",
                 ],
             ]
         ],
-        'hirondelleDeFenetre' => [
-            'nom' => 'Hirondelle de fenêtre',
+        'hirondelleRustique' => [
+            'nom' => 'Hirondelle rustique',
             'lien' => 'passeriformes|hirundinides',
             'commentaire' => "",
             'images' => []
         ],
-        'hirondelleRustique' => [
-            'nom' => 'Hirondelle rustique',
+        'hirondelleDeFenetre' => [
+            'nom' => 'Hirondelle de fenêtre',
             'lien' => 'passeriformes|hirundinides',
             'commentaire' => "",
             'images' => []

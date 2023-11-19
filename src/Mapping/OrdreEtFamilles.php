@@ -275,6 +275,10 @@ class OrdreEtFamilles
                             'nom' => 'Héron pourpré',
                             'espece' => 'Ardea purpurea'
                         ],
+                        'heronCendre' => [
+                            'nom' => 'Héron cendré',
+                            'espece' => 'Ardea cinerea'
+                        ],
                         'blongiosNain' => [
                             'nom' => 'Blongios nain',
                             'espece' => ''
