@@ -588,4 +588,251 @@ class Quizz
         8 => "grosBecCasseNoyaux_3.png",
         9 => "fauconCrecerelle_7.png"
     ];
+
+    public static $j20231203_pm = [
+        0 => "bargeRousse_3.png",
+  1 => "goelandMarin_3.png",
+  2 => "grandGravelot_1.png",
+  3 => "bergeronnetteGrise_1.png",
+  4 => "fauconPelerin_7.png",
+  5 => "chevalierGambette_0.png",
+  6 => "goelandMarin_0.png",
+  7 => "troglodyteMignon_0.png",
+  8 => "chouetteDeTengmalm_5.png",
+  9 => "fauconPelerin_2.png"
+    ];
+
+    public static $j20231204_am = [
+        0 => "vanneauHuppe_0.png",
+  1 => "harleHuppe_2.png",
+  2 => "courlisCendre_1.png",
+  3 => "hibouDesMarais_2.png",
+  4 => "lagopedeAlpin_2.png",
+  5 => "blongiosNain_5.png",
+  6 => "fauconCrecerelle_6.png",
+  7 => "cailleDesBles_0.png",
+  8 => "troglodyteMignon_3.png",
+  9 => "eiderADuvet_5.png"
+    ];
+
+    public static $j20231204_pm = [
+        0 => "grueCendree_0.png",
+  1 => "geaiDesChenes_0.png",
+  2 => "oieRieuse_1.png",
+  3 => "oieCendree_2.png",
+  4 => "bergeronnetteGrise_2.png",
+  5 => "becassineDesMarais_1.png",
+  6 => "butorEtoile_4.png",
+  7 => "canardColvert_1.png",
+  8 => "bouvreuilPivoine_1.png",
+  9 => "alouetteDesChamps_0.png"
+    ];
+
+    public static $j20231205_am = [
+        0 => "bouvreuilPivoine_3.png",
+  1 => "picVert_6.png",
+  2 => "butorEtoile_5.png",
+  3 => "fuliguleMorillon_2.png",
+  4 => "buseVariable_3.png",
+  5 => "grandTetras_0.png",
+  6 => "grebeCastagneux_6.png",
+  7 => "fauconPelerin_1.png",
+  8 => "effraieDesClochers_3.png",
+  9 => "hibouDesMarais_3.png"
+    ];
+
+    public static $j20231205_pm = [
+        0 => "accenteurMouchet_2.png",
+  1 => "canardSiffleur_0.png",
+  2 => "bouvreuilPivoine_1.png",
+  3 => "percnoptereDEgypte_4.png",
+  4 => "blongiosNain_7.png",
+  5 => "mesangeBleue_2.png",
+  6 => "mouetteRieuse_0.png",
+  7 => "aigretteGarzette_0.png",
+  8 => "percnoptereDEgypte_1.png",
+  9 => "oieRieuse_1.png"
+    ];
+
+    public static $j20231206_am = [
+        0 => "grandTetras_3.png",
+  1 => "tadorneDeBellon_2.png",
+  2 => "epervierDEurope_7.png",
+  3 => "grebeCastagneux_0.png",
+  4 => "buseVariable_2.png",
+  5 => "mouetteRieuse_3.png",
+  6 => "hibouDesMarais_1.png",
+  7 => "canardChipeau_1.png",
+  8 => "martinetAVentreBlanc_0.png",
+  9 => "picEpeichette_4.png"
+    ];
+
+    public static $j20231206_pm = [
+        0 => "becasseauCocorli_4.png",
+  1 => "chevalierArlequin_4.png",
+  2 => "avocetteElegante_0.png",
+  3 => "goelandMarin_0.png",
+  4 => "tadorneDeBellon_4.png",
+  5 => "bernacheCravant_2.png",
+  6 => "chevalierArlequin_3.png",
+  7 => "mesangeBleue_1.png",
+  8 => "alouetteDesChamps_0.png",
+  9 => "circaeteJeanLeBlanc_6.png"
+    ];
+
+    public static $j20231207_am = [
+        0 => "bihoreauGris_0.png",
+  1 => "pinsonDesArbres_6.png",
+  2 => "huppeFasciee_4.png",
+  3 => "bouvreuilPivoine_3.png",
+  4 => "hirondelleDeFenetre_5.png",
+  5 => "cekoi_1.png",
+  6 => "huitrierPie_0.png",
+  7 => "canardColvert_2.png",
+  8 => "chevalierGuignette_2.png",
+  9 => "martinetNoir_0.png"
+    ];
+
+    public static $j20231207_pm = [
+        0 => "eiderADuvet_5.png",
+  1 => "canardChipeau_2.png",
+  2 => "mouetteRieuse_0.png",
+  3 => "sterneCaugek_2.png",
+  4 => "lagopedeAlpin_3.png",
+  5 => "pygargueAQueueBlanche_3.png",
+  6 => "vanneauHuppe_0.png",
+  7 => "chevalierArlequin_3.png",
+  8 => "chevalierArlequin_1.png",
+  9 => "grosBecCasseNoyaux_3.png"
+    ];
+
+    public static $j20231208_am = [
+        0 => "pingouinTorda_0.png",
+  1 => "grosBecCasseNoyaux_3.png",
+  2 => "epervierDEurope_0.png",
+  3 => "outardeBarbue_0.png",
+  4 => "bouvreuilPivoine_5.png",
+  5 => "pingouinTorda_2.png",
+  6 => "chouetteHulotte_2.png",
+  7 => "bergeronnetteGrise_5.png",
+  8 => "blongiosNain_0.png",
+  9 => "chouetteDeTengmalm_3.png"
+    ];
+
+    public static $j20231208_pm = [
+        0 => "chevalierGuignette_4.png",
+  1 => "courlisCendre_3.png",
+  2 => "fauconCrecerelle_5.png",
+  3 => "petitDucScops_1.png",
+  4 => "becasseauVariable_1.png",
+  5 => "fuliguleMorillon_3.png",
+  6 => "canardPilet_0.png",
+  7 => "pluvierDore_6.png",
+  8 => "sterneCaugek_5.png",
+  9 => "chevalierGuignette_4.png"
+    ];
+
+    public static $j20231209_am = [
+        0 => "echasseBlanche_0.png",
+  1 => "petitDucScops_1.png",
+  2 => "lagopedeAlpin_2.png",
+  3 => "rougegorgeFamilier_1.png",
+  4 => "labbePomarin_5.png",
+  5 => "mesangeCharbonniere_1.png",
+  6 => "eiderADuvet_0.png",
+  7 => "pygargueAQueueBlanche_2.png",
+  8 => "rollierDEurope_2.png",
+  9 => "martinPecheurDEurope_4.png"
+    ];
+
+    public static $j20231209_pm = [
+        0 => "merleNoir_2.png",
+  1 => "grandCormoran_0.png",
+  2 => "troglodyteMignon_1.png",
+  3 => "fulmarBoreal_0.png",
+  4 => "courlisCendre_3.png",
+  5 => "blongiosNain_1.png",
+  6 => "chouetteDeTengmalm_5.png",
+  7 => "geaiDesChenes_1.png",
+  8 => "tadorneDeBellon_6.png",
+  9 => "fauconCrecerelle_1.png"
+    ];
+
+    public static $j20231210_am = [
+        0 => "mesangeBleue_2.png",
+  1 => "tourterelleDesBois_0.png",
+  2 => "heronCendre_0.png",
+  3 => "bergeronnetteGrise_6.png",
+  4 => "gypaeteBarbu_3.png",
+  5 => "hirondelleRustique_5.png",
+  6 => "ibisSacre_0.png",
+  7 => "canardChipeau_0.png",
+  8 => "geaiDesChenes_1.png",
+  9 => "gypaeteBarbu_6.png"
+    ];
+
+    public static $j20231210_pm = [
+        0 => "bouvreuilPivoine_2.png",
+  1 => "rougegorgeFamilier_1.png",
+  2 => "mouetteRieuse_5.png",
+  3 => "oieCendree_7.png",
+  4 => "pingouinTorda_1.png",
+  5 => "picEpeiche_3.png",
+  6 => "becasseauCocorli_2.png",
+  7 => "courlisCendre_3.png",
+  8 => "becasseauCocorli_0.png",
+  9 => "fulmarBoreal_0.png"
+    ];
+
+    public static $j20231211_am = [
+        0 => "sterneCaugek_6.png",
+  1 => "chevalierArlequin_1.png",
+  2 => "gypaeteBarbu_4.png",
+  3 => "pluvierDore_0.png",
+  4 => "butorEtoile_2.png",
+  5 => "becasseauCocorli_2.png",
+  6 => "rollierDEurope_4.png",
+  7 => "martinPecheurDEurope_2.png",
+  8 => "gypaeteBarbu_4.png",
+  9 => "rollierDEurope_0.png"
+    ];
+
+    public static $j20231211_pm = [
+        0 => "grebeCastagneux_7.png",
+  1 => "canardColvert_4.png",
+  2 => "grosBecCasseNoyaux_2.png",
+  3 => "picNoir_1.png",
+  4 => "cormoranHuppe_8.png",
+  5 => "picEpeichette_3.png",
+  6 => "bargeRousse_4.png",
+  7 => "goelandArgente_0.png",
+  8 => "bernacheCravant_0.png",
+  9 => "oieRieuse_0.png"
+    ];
+
+    public static $j20231212_am = [
+        0 => "mesangeBleue_0.png",
+  1 => "martinPecheurDEurope_0.png",
+  2 => "mouetteRieuse_4.png",
+  3 => "verdierDEurope_1.png",
+  4 => "grandDucDEurope_2.png",
+  5 => "bargeAQueueNoire_1.png",
+  6 => "mesangeCharbonniere_3.png",
+  7 => "picEpeichette_4.png",
+  8 => "picEpeiche_0.png",
+  9 => "pluvierDore_4.png"
+    ];
+
+    public static $j20231212_pm = [
+        0 => "fauconPelerin_3.png",
+  1 => "cailleDesBles_0.png",
+  2 => "bernacheCravant_0.png",
+  3 => "pluvierDore_6.png",
+  4 => "bergeronnetteGrise_6.png",
+  5 => "rougegorgeFamilier_1.png",
+  6 => "canardPilet_0.png",
+  7 => "picNoir_0.png",
+  8 => "grebeCastagneux_6.png",
+  9 => "grandGravelot_0.png"
+    ];
 }
