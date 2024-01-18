@@ -11,6 +11,8 @@
 
 
         {{ encore_entry_link_tags('app') }}
+        <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+        <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -25,8 +27,8 @@
             <a id="home" class="underline-none" href="{{ path('index') }}">Birds</a></b>
         <br>
         <a id="apprendre" class="underline-none" href="{{ path('apprendre') }}">Apprendre</a>
-        <br>
-        <a class="underline-none" href="{{ path('quizzUnOiseau') }}">Quizz</a>
+{#        <br>#}
+{#        <a class="underline-none" href="{{ path('quizzUnOiseau') }}">Quizz</a>#}
     </div>
 
 

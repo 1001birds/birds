@@ -163,6 +163,12 @@ body {
     overflow-y:auto;
 }
 /*RADIUS*/
+.radius3white {
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    background-color: white;
+    padding: 3px;
+}
 .radius5white {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
@@ -175,12 +181,31 @@ body {
     background-color: #efefef;
     padding: 10px;
 }
+.containergreylight {
+    margin: 5px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 10px;
+}
 .radius5greylight {
     border: 1px solid #efefef;
     border-radius: 5px;
     background-color: #fafafa;
     padding: 10px;
 }
+.radius5greylightplus {
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #edede8;
+    padding: 10px;
+}
+.radius5greylight2 {
+     border: 1px solid #efefef;
+     border-radius: 5px;
+     background-color: #f9f8f7;
+     padding: 10px;
+ }
 .radius5beige {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
@@ -196,6 +221,9 @@ body {
 .spanLink {
     color: #116597;
     text-decoration: underline;
+}
+.divLink a {
+    text-decoration: none;
 }
 /*LOADER*/
 #backLoader{

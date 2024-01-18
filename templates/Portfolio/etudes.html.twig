@@ -1,0 +1,71 @@
+{% extends 'Portfolio/base.html.twig' %}
+
+{% block content %}
+
+<div class="container mt-1 p-3">
+
+    <div class="radius5greylight2 top20">
+        <p class="fs-6  top5">
+            Quelques unes de mes réalisations faites en école.
+        </p>
+    </div>
+    <div class="radius3white top20">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Papillon"
+             title="Papillon"
+             src="{{ asset('/build/images/portfolio/papillon.png') }}">
+        <div class="fs-4 top10">&nbsp; Atelier</div>
+        <div class="fs-6 ">&nbsp; Papillon en maillechort</div>
+
+    </div>
+
+    <div class="radius3white top20">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Tortue"
+             title="Tortue"
+             src="{{ asset('/build/images/portfolio/cliquet.png') }}">
+        <div class="fs-4 top10">&nbsp; Atelier</div>
+        <div class="fs-6 ">&nbsp; Cliquet en maillechort</div>
+    </div>
+
+
+    <div class="radius3white top20">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Cire"
+             title="Cire"
+             src="{{ asset('/build/images/portfolio/cire.png') }}">
+        <div class="fs-4 top10">&nbsp; Cire</div>
+        <div class="fs-6 ">&nbsp; Bague tank</div>
+    </div>
+
+
+    <div class="radius3white top20">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Serpent en or"
+             title="Serpent en or"
+             src="{{ asset('/build/images/portfolio/gouache_serpent.png') }}">
+        <div class="fs-4 top10">&nbsp; Gouaché</div>
+        <div class="fs-6 ">&nbsp; Serpent en or</div>
+    </div>
+
+
+    <div class="radius3white top20">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Fleur en or, ornée de perles d'émeraudes"
+             title="Fleur en or, ornée de perles d'émeraudes"
+             src="{{ asset('/build/images/portfolio/gouache_fleur.png') }}">
+        <div class="fs-4 top10">&nbsp; Gouaché</div>
+        <div class="fs-6 ">&nbsp; Fleur en or, ornée de perles d'émeraudes</div>
+    </div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type='text/javascript' src="{{ asset('build/js/apprendre.js') }}"></script>
+{% endblock %}

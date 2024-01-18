@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Manipulator\OiseauxManipulator;
+use App\Manipulator\PortfolioManipulator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\DependencyInjection\ParameterBag\ContainerBagInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -10,17 +11,17 @@ use Symfony\Component\Routing\Annotation\Route;
 use Nelmio\ApiDocBundle\Annotation as Nelmio;
 use OpenApi\Annotations as OA;
 
-class OiseauxController extends AbstractController
+class PortfolioController extends AbstractController
 {
     protected $params;
-    protected $oiseauxManipulator;
+    protected $portfolioManipulator;
 
     public function __construct(
         ContainerBagInterface $params,
-        OiseauxManipulator $oiseauxManipulator
+        PortfolioManipulator $portfolioManipulator
     ) {
         $this->params = $params;
-        $this->oiseauxManipulator = $oiseauxManipulator;
+        $this->portfolioManipulator = $portfolioManipulator;
     }
 
     /**
@@ -28,49 +29,10 @@ class OiseauxController extends AbstractController
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function index(
+    public function home(
         Request $request
     ) {
-        $countFamilles = 0;
-        $countOiseaux = 0;
-        $listeOrdresEtFamilles = $this->oiseauxManipulator->listeOrdresEtFamilles_3();
-        $countOrdres = count($listeOrdresEtFamilles);
-        foreach ($listeOrdresEtFamilles as $ordreEtFamille) {
-            foreach ($ordreEtFamille['familles'] as $famille) {
-                $countFamilles++;
-                foreach ($famille['oiseaux'] as $oiseau) {
-                    $countOiseaux++;
-                }
-            }
-        }
-        /*
-         * COUNT IMAGES
-         * */
-        $cheminVersDossierImagesOiseaux = $this->params->get('kernel.project_dir').'/public/build/images/oiseaux/';
-        $countImages = count(glob($cheminVersDossierImagesOiseaux.'*'));
-//        $numbers = range(1, $count);
-//        shuffle($numbers);
-//        $indiceImage = $numbers[0];
-//        $i = 0;
-//        $imageChoisie = null;
-//        $scanDIR = scandir($cheminVersDossierImagesOiseaux);
-//        foreach($scanDIR as $file) {
-//            if(strpos($file, 'png') !== false) {
-//                $i++;
-//                if($indiceImage == $i) {
-//                    $imageChoisie = $file;
-//                }
-//            }
-//        }
-//
-//
-        return $this->render('Birds/index.html.twig', [
-            'ordresEtFamilles' => $this->oiseauxManipulator->listeOrdresEtFamilles_3(),
-            'countOrdres' => $countOrdres,
-            'countFamilles' => $countFamilles,
-            'countOiseaux' => $countOiseaux,
-            'countImages' => $countImages
-        ]);
+        return $this->render('Portfolio/home.html.twig');
     }
 
     /**
@@ -78,14 +40,21 @@ class OiseauxController extends AbstractController
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function oiseau(
+    public function etudes(
         Request $request
     ) {
-        return $this->render('Birds/oiseau.html.twig',
-            $this->oiseauxManipulator->oiseau(
-                $request->get('string')
-            )
-        );
+        return $this->render('Portfolio/etudes.html.twig');
+    }
+
+    /**
+     * @OA\Response(response=200,description="Index")
+     * @OA\Tag(name="Default")
+     * @Nelmio\Security(name="Bearer")
+     */
+    public function creations(
+        Request $request
+    ) {
+        return $this->render('Portfolio/creations.html.twig');
     }
 
 

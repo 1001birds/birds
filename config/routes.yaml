@@ -1,6 +1,22 @@
-index:
+#index:
+#    path: /
+#    defaults: { _controller: 'App\Controller\OiseauxController::index' }
+
+home:
     path: /
-    defaults: { _controller: 'App\Controller\OiseauxController::index' }
+    defaults: { _controller: 'App\Controller\PortfolioController::home' }
+
+etudes:
+    path: /etudes
+    defaults: { _controller: 'App\Controller\PortfolioController::etudes' }
+
+creations:
+    path: /creations
+    defaults: { _controller: 'App\Controller\PortfolioController::creations' }
+
+travaux:
+    path: /travaux
+    defaults: { _controller: 'App\Controller\PortfolioController::travaux' }
 
 apprendre:
     path: /apprendre
@@ -23,6 +39,8 @@ quizzUnOiseau:
 oiseau:
     path: /oiseau
     defaults: { _controller: 'App\Controller\OiseauxController::oiseau' }
+
+
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing-sf4.xml"

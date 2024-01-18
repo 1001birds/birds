@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Lola portfolio</title>
+
+
+    {{ encore_entry_link_tags('app') }}
+    <script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+    <script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <a href="{{ path('home') }}" style="text-decoration: none;color:black;">
+        <div class="radius5greylight text-center divLink">
+            <p class="lead">
+                    <span class="text-uppercase">Portfolio de bijouterie</span>
+                <br>
+                <small class="text-muted">Lola MARCHAND</small>
+            </p>
+        </div>
+    </a>
+{% block content %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ encore_entry_script_tags('app') }}
+    <script type='text/javascript' src="{{ asset('build/js/bootstrap-select.min.js') }}"></script>
+{% endblock %}
+
+</body>
+</html>
