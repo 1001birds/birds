@@ -57,78 +57,63 @@ class PortfolioController extends AbstractController
         return $this->render('Portfolio/creations.html.twig');
     }
 
-
-    #[Route(path: '/foo/{id}/bar', name: 'my_route_to_expose', options: ['expose' => true])]
-
     /**
-     * @Route ("/one", name="one", options={"expose"=true})
-     *
-     * @OA\Response(response=200,description="Index")
+     * @OA\Response(response=200,description="Création tortue")
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function one(
+    public function creationTortue(
         Request $request
     ) {
-        return $this->render('Birds/oiseau.html.twig',
-            $this->oiseauxManipulator->oiseau(
-                $request->get('string')
-            )
-        );
+        return $this->render('Portfolio/creation.html.twig', [
+            'string' => 'tortue',
+            'nom' => 'Tortue',
+            'titre' => "La tortue"
+        ]);
     }
 
     /**
-     * @OA\Response(response=200,description="Apprendre")
+     * @OA\Response(response=200,description="Création aventurine")
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function apprendre(
+    public function creationAventurine(
         Request $request
     ) {
-        return $this->render('Birds/apprendre.html.twig',
-            $this->oiseauxManipulator->apprendre()
-        );
+        return $this->render('Portfolio/creation.html.twig', [
+            'string' => 'aventurine',
+            'nom' => 'Aventurine',
+            'titre' => "Bague argent serti d'une aventurine"
+        ]);
     }
 
     /**
-     * @OA\Response(response=200,description="Apprendre JS")
+     * @OA\Response(response=200,description="Création chevaliere")
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function apprendreJS(
+    public function creationChevaliere(
         Request $request
     ) {
-
-//        dump($this->oiseauxManipulator->apprendre());die;
-
-
-//        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
-//        dump($listeOiseaux);
-//        die;
-        return $this->render('Birds/apprendre.html.twig',
-            $this->oiseauxManipulator->apprendre()
-        );
+        return $this->render('Portfolio/creation.html.twig', [
+            'string' => 'chevaliere',
+            'nom' => 'Chevalière',
+            'titre' => 'Chevalière argent'
+        ]);
     }
 
     /**
-     * @OA\Response(response=200,description="Index")
+     * @OA\Response(response=200,description="Création pendentif")
      * @OA\Tag(name="Default")
      * @Nelmio\Security(name="Bearer")
      */
-    public function quizzUnOiseau(
+    public function creationPendentif(
         Request $request
     ) {
-//        dump(
-//            $this->oiseauxManipulator->imagesDixOiseauxAuHasard()
-//        );
-//        die;
-//        return $this->oiseauxManipulator->quizzUnOiseau();
-
-//        $listeOiseaux = $this->oiseauxManipulator->listeOiseaux();
-//        dump($listeOiseaux);
-//        die;
-        return $this->render('Birds/quizzUnOiseau.html.twig', [
-            'images' => $this->oiseauxManipulator->quizzUnOiseau()
+        return $this->render('Portfolio/creation.html.twig', [
+            'string' => 'pendentif',
+            'nom' => 'Pendentif',
+            'titre' => "Pendentif argent serti d'une tourmaline rose"
         ]);
     }
 }

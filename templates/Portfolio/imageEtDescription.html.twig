@@ -1,0 +1,18 @@
+<div class="radius3white top30">
+    {% if link != '' %}
+        <a href="{{ path(link) }}">
+    {% endif %}
+        <img id="img"
+             class="img-fluid responsive"
+             alt="{{ titre }}"
+             title="{{ titre }}"
+             src="{{ asset('/build/images/portfolio/'~img) }}">
+    {% if link != '' %}
+        </a>
+    {% endif %}
+    <div class="top10"
+         style="margin-left:12px;">
+        <div class="fs-4">{{ titre }}</div>
+        <div class="fs-6">{{ description | raw }}</div>
+    </div>
+</div>

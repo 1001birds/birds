@@ -2,88 +2,58 @@
 
 {% block content %}
 
-    <div class="container mt-1 p-3">
-
-        <div class="radius5greylight2 top20">
-            <h4>Imagination, réalisation</h4>
-            <p class="fs-6">
-                Sur cette page je vous présente certaines de mes petites créations que j'ai pu imaginer et produire lors de mon temps en entreprise.
-            </p>
-        </div>
-        <div class="radius3white top20">
-            <img id="img"
-                 class="img-fluid responsive"
-                 alt="Tortue"
-                 title="Tortue"
-                 src="{{ asset('/build/images/portfolio/creation_tortue_1.png') }}">
-            <div class="top10"
-                 style="margin-left:12px;">
-                <div class="fs-4">La tortue</div>
-                <div class="fs-6">Pièce réalisé à partir d'une plaque et de petit débris d'argent.<br>
-                    - sciage<br>
-                    - dessin<br>
-                    - embouti<br>
-                    - soudure
-                </div>
-            </div>
-        </div>
-
-        <div class="radius3white top20">
-            <img id="img"
-                 class="img-fluid responsive"
-                 alt="Bague argent serti d'une aventurine"
-                 title="Bague argent serti d'une aventurine"
-                 src="{{ asset('/build/images/portfolio/creation_aventurine_1.png') }}">
-            <div class="top10"
-                 style="margin-left:12px;">
-                <div class="fs-4">Bague argent serti d'une aventurine</div>
-                <div class="fs-6">Bague faite en utilisant de plaques et du fil demi jonc en argent.<br>
-                    - sciage<br>
-                    - perçage<br>
-                    - laminage<br>
-                    - soudure<br>
-                    - sertissage
-                </div>
-            </div>
-        </div>
-
-        <div class="radius3white top20">
-            <img id="img"
-                 class="img-fluid responsive"
-                 alt="Chevalière argent"
-                 title="Chevalière argent"
-                 src="{{ asset('/build/images/portfolio/creation_chevaliere_1.png') }}">
-            <div class="top10"
-                 style="margin-left:12px;">
-                <div class="fs-4">Chevalière argent</div>
-                <div class="fs-6">Je l'ai réalisé à partir d'une plaque d'argent.<br>
-                    - dessin<br>
-                    - sciage<br>
-                    - ajustage<br>
-                    - soudure précise
-                </div>
-            </div>
-        </div>
-
-
-        <div class="radius3white top20">
-            <img id="img"
-                 class="img-fluid responsive"
-                 alt="Pendentif argent serti d'une tourmaline rose"
-                 title="Pendentif argent serti d'une tourmaline rose"
-                 src="{{ asset('/build/images/portfolio/creation_pendentif_1.png') }}">
-            <div class="top10"
-                 style="margin-left:12px;">
-                <div class="fs-4">Pendentif argent serti d'une tourmaline rose</div>
-                <div class="fs-6">Pendentif réalisé avec une plaque et du fil d'argent.<br>
-                    - laminage<br>
-                    - sciage<br>
-                    - soudure<br>
-                    - sertissage
-                </div>
-            </div>
-        </div>
+    <div class="radius5greylight2 top5">
+        <h4>Imagination, réalisation</h4>
+        <p class="fs-6">
+            Sur cette page je vous présente certaines de mes petites créations que j'ai pu imaginer et produire lors de mon temps en entreprise.
+        </p>
     </div>
+
+    {% set link = 'creationTortue' %}
+    {% set links = ['creationTortue', 'creationAventurine', 'creationChevaliere', ''] %}
+    {% set titre = 'La tortue' %}
+    {% set titres = ['La tortue', "Bague argent serti d'une aventurine", 'Chevalière argent', "Pendentif argent serti d'une tourmaline rose"] %}
+    {% set img = 'creation_tortue_1.png' %}
+    {% set imgs = ['creation_tortue_1.png', 'creation_aventurine_1.png', 'creation_chevaliere_1.png', 'creation_pendentif_1.png'] %}
+    {% set description = "Pièce réalisé à partir d'une plaque et de petit débris d'argent.<br>
+        - sciage<br>
+        - dessin<br>
+        - embouti<br>
+        - soudure" %}
+    {% set descriptions = [
+        "Pièce réalisé à partir d'une plaque et de petit débris d'argent.<br>
+            - sciage<br>
+            - dessin<br>
+            - embouti<br>
+            - soudure",
+        "Bague faite en utilisant de plaques et du fil demi jonc en argent.<br>
+            - sciage<br>
+            - perçage<br>
+            - laminage<br>
+            - soudure<br>
+            - sertissage",
+        "Je l'ai réalisé à partir d'une plaque d'argent.<br>
+            - dessin<br>
+            - sciage<br>
+            - ajustage<br>
+            - soudure précise",
+        "Pendentif réalisé avec une plaque et du fil d'argent.<br>
+            - laminage<br>
+            - sciage<br>
+            - soudure<br>
+            - sertissage"
+    ] %}
+
+    {% for link in links %}
+        {% set i = loop.index0 %}
+        {{ include('Portfolio/imageEtDescription.html.twig', {
+            link:link,
+            titre: titres[i],
+            img: imgs[i],
+            description: descriptions[i]
+        }) }}
+    {% endfor %}
+
 {% endblock %}
 
 {% block javascripts %}

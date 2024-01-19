@@ -1,69 +1,63 @@
 {% extends 'Portfolio/base.html.twig' %}
 
 {% block content %}
-    <div class="container mt-1 p-3">
-        <div class="row">
-            <div class="col-xs-12">
 
-                <div class="text-center bottom10">
-                    ETUDIANTE EN BIJOUTERIE JOAILLERIE
-                </div>
-
-                <div class="radius3white">
-                    <img id="img"
-                         class="img-fluid responsive"
-                         alt="Tortue"
-                         title="Tortue"
-                         src="{{ asset('/build/images/portfolio/tortue.png') }}">
-                </div>
-
-                <div class="radius5greylight2 top20">
-                    <p class="fs-6  top5">
-                        Je suis Lola Marchand, étudiante en bijouterie joaillerie. Ici, vous retrouverez quelques travaux que j'ai réalisé au cours de ma scolarité.
-                    </p>
-                </div>
-
-                {#
-                MES ETUDES
-                #}
-                <a href="{{ path('etudes') }}">
-                    <div class="radius3white text-center top20">
-                        <img id="img"
-                             class="img-fluid responsive"
-                             alt="Mes études de bijouterie"
-                             title="Mes études de bijouterie"
-                             src="{{ asset('/build/images/portfolio/mes_etudes_bijouterie_3.png') }}">
-                    </div>
-                </a>
-
-                {#
-                MES CREATIONS
-                #}
-                <a href="{{ path('creations') }}">
-                    <div class="radius3white text-center top5">
-                        <img id="img"
-                             class="img-fluid responsive"
-                             alt="Mes créations"
-                             title="Mes créations"
-                             src="{{ asset('/build/images/portfolio/mes_creations.png') }}">
-    {#                    src="{{ asset('/build/images/portfolio/mes_creations_1.png') }}">#}
-                    </div>
-                </a>
-
-                {#
-                CONTACT
-                #}
-                <div class="radius3white text-center top20">
-                    <img id="img"
-                         class="img-fluid responsive"
-                         alt="Contact"
-                         title="Contact"
-                         src="{{ asset('/build/images/portfolio/contact.png') }}">
-                </div>
-
-            </div>
-        </div>
+    <div class="text-center bottom10">
+        ETUDIANTE EN BIJOUTERIE JOAILLERIE
     </div>
+
+    <div class="radius3white">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Tortue"
+             title="Tortue"
+             src="{{ asset('/build/images/portfolio/tortue.png') }}">
+    </div>
+
+    <div class="radius5greylight2 top20 text-center">
+        <p class="fs-6  top5">
+            Je suis Lola Marchand, étudiante en bijouterie joaillerie. Ici, vous retrouverez quelques travaux que j'ai réalisé au cours de ma scolarité.
+        </p>
+    </div>
+
+    {#
+    MES ETUDES
+    #}
+    <a href="{{ path('etudes') }}">
+        <div class="radius3white text-center top20">
+            <img id="img"
+                 class="img-fluid responsive"
+                 alt="Mes études de bijouterie"
+                 title="Mes études de bijouterie"
+                 src="{{ asset('/build/images/portfolio/mes_etudes_bijouterie_3.png') }}">
+        </div>
+    </a>
+
+    {#
+    MES CREATIONS
+    #}
+    <a href="{{ path('creations') }}">
+        <div class="radius3white text-center top5">
+            <img id="img"
+                 class="img-fluid responsive"
+                 alt="Mes créations"
+                 title="Mes créations"
+                 src="{{ asset('/build/images/portfolio/mes_creations.png') }}">
+{#                    src="{{ asset('/build/images/portfolio/mes_creations_1.png') }}">#}
+        </div>
+    </a>
+
+    {#
+    CONTACT
+    #}
+    <div class="radius3white text-center top20">
+        <img id="img"
+             class="img-fluid responsive"
+             alt="Contact"
+             title="Contact"
+             src="{{ asset('/build/images/portfolio/contact.png') }}">
+    </div>
+
 {% endblock %}
 
 {% block javascripts %}

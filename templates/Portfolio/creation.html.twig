@@ -1,0 +1,21 @@
+{% extends 'Portfolio/base.html.twig' %}
+
+{% block content %}
+
+    <h2>{{ titre }}</h2>
+    {#
+    RETOUR
+    #}
+    {{ include('Portfolio/retourCreations.html.twig') }}
+    {#
+    IMAGES
+    #}
+    {% for i in 1..4 %}
+        {{ include('Portfolio/imageEtCommentaire.html.twig') }}
+    {% endfor %}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}

@@ -1,22 +1,10 @@
+###
+# BIRDS
+###
+
 #index:
 #    path: /
 #    defaults: { _controller: 'App\Controller\OiseauxController::index' }
-
-home:
-    path: /
-    defaults: { _controller: 'App\Controller\PortfolioController::home' }
-
-etudes:
-    path: /etudes
-    defaults: { _controller: 'App\Controller\PortfolioController::etudes' }
-
-creations:
-    path: /creations
-    defaults: { _controller: 'App\Controller\PortfolioController::creations' }
-
-travaux:
-    path: /travaux
-    defaults: { _controller: 'App\Controller\PortfolioController::travaux' }
 
 apprendre:
     path: /apprendre
@@ -40,7 +28,44 @@ oiseau:
     path: /oiseau
     defaults: { _controller: 'App\Controller\OiseauxController::oiseau' }
 
+###
+# PORTFOLIO
+###
+
+home:
+    path: /
+    defaults: { _controller: 'App\Controller\PortfolioController::home' }
+
+etudes:
+    path: /etudes
+    defaults: { _controller: 'App\Controller\PortfolioController::etudes' }
+
+creations:
+    path: /creations
+    defaults: { _controller: 'App\Controller\PortfolioController::creations' }
+
+travaux:
+    path: /travaux
+    defaults: { _controller: 'App\Controller\PortfolioController::travaux' }
+
+creationTortue:
+    path: /creation-tortue
+    defaults: { _controller: 'App\Controller\PortfolioController::creationTortue' }
+
+creationAventurine:
+    path: /creation-aventurine
+    defaults: { _controller: 'App\Controller\PortfolioController::creationAventurine' }
+
+creationChevaliere:
+    path: /creation-chevaliere
+    defaults: { _controller: 'App\Controller\PortfolioController::creationChevaliere' }
+
+creationPendentif:
+    path: /creation-pendentif
+    defaults: { _controller: 'App\Controller\PortfolioController::creationPendentif' }
 
 
+
+#FOS_JS
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing-sf4.xml"
