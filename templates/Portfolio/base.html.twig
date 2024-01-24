@@ -21,15 +21,34 @@
     <![endif]-->
 </head>
 <body>
-    <a href="{{ path('home') }}" style="text-decoration: none;color:black;">
         <div class="radius5greylight text-center divLink">
+
+
             <p class="lead">
                     <span class="text-uppercase">Portfolio de bijouterie</span>
                 <br>
                 <small class="text-muted">Lola MARCHAND</small>
             </p>
+
         </div>
-    </a>
+            <div class="radius5greylight text-center divLink text-menu">
+                <a href="{{ path('home') }}" style="text-decoration: none;color:#0d4f5d;">
+                    Accueil
+                </a>
+                &nbsp;
+                <a href="{{ path('creations') }}" style="text-decoration: none;color:#0d4f5d;">
+                    Créations
+                </a>
+                    &nbsp;
+                <a href="{{ path('etudes') }}" style="text-decoration: none;color:#0d4f5d;">
+                    Etudes
+                </a>
+{#                &nbsp;#}
+{#                <a href="{{ path('home') }}" style="text-decoration: none;color:#0d4f5d;">#}
+{#                    A propos#}
+{#                </a>#}
+
+        </div>
 
     <div class="container mt-1 p-3">
         <div class="row">

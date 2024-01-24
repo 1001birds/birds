@@ -1,5 +1,5 @@
 {
-  "build/app.css": "/build/app.7f589ff0.css",
+  "build/app.css": "/build/app.d57103be.css",
   "build/app.js": "/build/app.4b7c4a27.js",
   "build/runtime.js": "/build/runtime.aabb9aa3.js",
   "build/492.de89b97a.css": "/build/492.de89b97a.css",
@@ -541,6 +541,8 @@
   "build/images/portfolio/mes_creations_2.png": "/build/images/portfolio/mes_creations_2.png",
   "build/js/jquery.datetimepicker.js": "/build/js/jquery.datetimepicker.938eafc7.js",
   "build/js/bootstrap-datetimepicker.js": "/build/js/bootstrap-datetimepicker.7126fc95.js",
+  "build/images/portfolio/contact_1.png": "/build/images/portfolio/contact_1.png",
+  "build/images/portfolio/contact_2.png": "/build/images/portfolio/contact_2.png",
   "build/images/ui-icons_777777_256x240.png": "/build/images/ui-icons_777777_256x240.png",
   "build/images/ui-icons_444444_256x240.png": "/build/images/ui-icons_444444_256x240.png",
   "build/images/ui-icons_555555_256x240.png": "/build/images/ui-icons_555555_256x240.png",
@@ -553,6 +555,7 @@
   "build/js/dataTables.bootstrap4.min.js": "/build/js/dataTables.bootstrap4.min.0ec4f928.js",
   "build/js/dataTables.bootstrap5.js": "/build/js/dataTables.bootstrap5.36a068c0.js",
   "build/js/responsive.bootstrap.min.js": "/build/js/responsive.bootstrap.min.6435d00c.js",
+  "build/images/portfolio/menu.png": "/build/images/portfolio/menu.png",
   "build/js/apprendre.js": "/build/js/apprendre.db3ff3c8.js",
   "build/js/bootstrap-datetimepicker.fr.js": "/build/js/bootstrap-datetimepicker.fr.e9cf36d1.js",
   "build/js/birds.js": "/build/js/birds.60e153d1.js"

@@ -1,0 +1,36 @@
+<nav style="z-index: 1000" class="navbar navbar-expand-lg navbar-default ">
+    <div class="container radius5greylight">
+        <a class="navbar-brand loader" href="{{ path('apprendre') }}" style="color:#000000!important;">
+            <button class="btn btn-xs"><span class="glyphicons glyphicons-home"></span></button>
+            Lola Portfolio
+            {# <span style="font-size: 50%">{{ l_version }}</span> #}
+        </a>
+        <span class="navbar-brand">
+                <small class="hidden-xs" id="navDate"></small>
+                <small class="visible-xs" id="navDateXs"></small>
+            </span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01"
+                aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample01">
+            {% block contextButtons %}
+            {% endblock %}
+            <ul class="nav navbar-nav navbar-left" id="navbar">
+            </ul>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 hidden-xs">
+
+                <li class="nav-item">
+                    <a href="/logout" class="nav-link"
+                       data-bs-toggle="popover" title="zzz">
+                        <button class="btn btn-xs btn-danger"><span class="glyphicons glyphicons-power"></span> Déconnexion</button>
+                    </a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
